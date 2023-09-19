@@ -22,7 +22,7 @@ pod 'Duxer'
 
 ## Author
 
-004230, 004230@ibar.int
+Kenan Alizadeh
 
 ## License
 
