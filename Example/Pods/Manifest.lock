@@ -1,0 +1,27 @@
+PODS:
+  - Duxer (0.1.0)
+  - Nimble (10.0.0)
+  - Quick (2.2.1)
+
+DEPENDENCIES:
+  - Duxer (from `../`)
+  - Nimble (~> 10.0.0)
+  - Quick (~> 2.2.0)
+
+SPEC REPOS:
+  trunk:
+    - Nimble
+    - Quick
+
+EXTERNAL SOURCES:
+  Duxer:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Duxer: f21a363ad8a02b7e3c7361afe40a648c3c07d9cc
+  Nimble: 5316ef81a170ce87baf72dd961f22f89a602ff84
+  Quick: f5754d69b7013f5864c29aab9ae6f0c79c5bc200
+
+PODFILE CHECKSUM: b5ff9895e8678984527923b573264c77bfa5504a
+
+COCOAPODS: 1.11.3

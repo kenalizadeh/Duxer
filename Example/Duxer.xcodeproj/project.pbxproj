@@ -9,12 +9,72 @@
 /* Begin PBXBuildFile section */
 		4636A77849B1F23C3BBA0757 /* Pods_Duxer_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD705E5E261AFEE441212810 /* Pods_Duxer_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
-		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		96006615A396E488B94A1C36 /* Pods_Duxer_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87C479DDB431E8B02AE7E806 /* Pods_Duxer_Example.framework */; };
+		C7D346FA2AB9DA5600D3A6C4 /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D346F42AB9DA5600D3A6C4 /* Actions.swift */; };
+		C7D346FB2AB9DA5600D3A6C4 /* DXAppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D346F52AB9DA5600D3A6C4 /* DXAppState.swift */; };
+		C7D346FC2AB9DA5600D3A6C4 /* Middlewares.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D346F62AB9DA5600D3A6C4 /* Middlewares.swift */; };
+		C7D346FD2AB9DA5600D3A6C4 /* Reducers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D346F72AB9DA5600D3A6C4 /* Reducers.swift */; };
+		C7D346FE2AB9DA5600D3A6C4 /* Thunks.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D346F82AB9DA5600D3A6C4 /* Thunks.swift */; };
+		C7D346FF2AB9DA5600D3A6C4 /* DXStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D346F92AB9DA5600D3A6C4 /* DXStore.swift */; };
+		C7D347452AB9DA7600D3A6C4 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D347012AB9DA7600D3A6C4 /* CardView.swift */; };
+		C7D347462AB9DA7600D3A6C4 /* C2CTransferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D347022AB9DA7600D3A6C4 /* C2CTransferView.swift */; };
+		C7D347472AB9DA7600D3A6C4 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D347042AB9DA7600D3A6C4 /* Label.swift */; };
+		C7D347482AB9DA7600D3A6C4 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D347052AB9DA7600D3A6C4 /* TextField.swift */; };
+		C7D347492AB9DA7600D3A6C4 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D347062AB9DA7600D3A6C4 /* Button.swift */; };
+		C7D3474A2AB9DA7600D3A6C4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D347092AB9DA7600D3A6C4 /* HomeViewController.swift */; };
+		C7D3474B2AB9DA7600D3A6C4 /* HomeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D3470A2AB9DA7600D3A6C4 /* HomeModels.swift */; };
+		C7D3474C2AB9DA7600D3A6C4 /* HomeViewController+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D3470B2AB9DA7600D3A6C4 /* HomeViewController+UITableViewDataSource.swift */; };
+		C7D3474D2AB9DA7600D3A6C4 /* HomeViewController+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D3470C2AB9DA7600D3A6C4 /* HomeViewController+UITableViewDelegate.swift */; };
+		C7D3474E2AB9DA7600D3A6C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D3470D2AB9DA7600D3A6C4 /* ViewController.swift */; };
+		C7D3474F2AB9DA7600D3A6C4 /* RegistrationModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D3470F2AB9DA7600D3A6C4 /* RegistrationModels.swift */; };
+		C7D347502AB9DA7600D3A6C4 /* RegistrationViewController+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D347102AB9DA7600D3A6C4 /* RegistrationViewController+UITableViewDataSource.swift */; };
+		C7D347512AB9DA7600D3A6C4 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D347112AB9DA7600D3A6C4 /* RegistrationViewController.swift */; };
+		C7D347522AB9DA7600D3A6C4 /* RegistrationViewController+UITextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D347122AB9DA7600D3A6C4 /* RegistrationViewController+UITextFieldDelegate.swift */; };
+		C7D347532AB9DA7600D3A6C4 /* OrderCardModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D347142AB9DA7600D3A6C4 /* OrderCardModels.swift */; };
+		C7D347542AB9DA7600D3A6C4 /* OrderCardViewController+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D347152AB9DA7600D3A6C4 /* OrderCardViewController+UITableViewDataSource.swift */; };
+		C7D347552AB9DA7600D3A6C4 /* OrderCardViewController+UITextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D347162AB9DA7600D3A6C4 /* OrderCardViewController+UITextFieldDelegate.swift */; };
+		C7D347562AB9DA7600D3A6C4 /* OrderCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D347172AB9DA7600D3A6C4 /* OrderCardViewController.swift */; };
+		C7D347572AB9DA7600D3A6C4 /* TransferCardSelectionViewController+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D347192AB9DA7600D3A6C4 /* TransferCardSelectionViewController+UITableViewDataSource.swift */; };
+		C7D347582AB9DA7600D3A6C4 /* TransferCardSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D3471A2AB9DA7600D3A6C4 /* TransferCardSelectionViewController.swift */; };
+		C7D347592AB9DA7600D3A6C4 /* TransferCardSelectionViewController+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D3471B2AB9DA7600D3A6C4 /* TransferCardSelectionViewController+UITableViewDelegate.swift */; };
+		C7D3475A2AB9DA7600D3A6C4 /* AddCardViewController+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D3471D2AB9DA7600D3A6C4 /* AddCardViewController+UITableViewDataSource.swift */; };
+		C7D3475B2AB9DA7600D3A6C4 /* AddCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D3471E2AB9DA7600D3A6C4 /* AddCardViewController.swift */; };
+		C7D3475C2AB9DA7600D3A6C4 /* AddCardViewController+UITextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D3471F2AB9DA7600D3A6C4 /* AddCardViewController+UITextFieldDelegate.swift */; };
+		C7D3475D2AB9DA7600D3A6C4 /* AddCardModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D347202AB9DA7600D3A6C4 /* AddCardModels.swift */; };
+		C7D3475E2AB9DA7600D3A6C4 /* CardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D347222AB9DA7600D3A6C4 /* CardDetailViewController.swift */; };
+		C7D3475F2AB9DA7600D3A6C4 /* CardDetailViewController+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D347232AB9DA7600D3A6C4 /* CardDetailViewController+UITableViewDelegate.swift */; };
+		C7D347602AB9DA7600D3A6C4 /* CardDetailViewController+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D347242AB9DA7600D3A6C4 /* CardDetailViewController+UITableViewDataSource.swift */; };
+		C7D347612AB9DA7600D3A6C4 /* CardDetailModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D347252AB9DA7600D3A6C4 /* CardDetailModels.swift */; };
+		C7D347622AB9DA7600D3A6C4 /* TransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D347272AB9DA7600D3A6C4 /* TransferViewController.swift */; };
+		C7D347632AB9DA7600D3A6C4 /* TransferModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D347282AB9DA7600D3A6C4 /* TransferModels.swift */; };
+		C7D347642AB9DA7600D3A6C4 /* TransferViewController+UITextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D347292AB9DA7600D3A6C4 /* TransferViewController+UITextFieldDelegate.swift */; };
+		C7D347652AB9DA7600D3A6C4 /* TransferViewController+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D3472A2AB9DA7600D3A6C4 /* TransferViewController+UITableViewDataSource.swift */; };
+		C7D347662AB9DA7600D3A6C4 /* TransferViewController+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D3472B2AB9DA7600D3A6C4 /* TransferViewController+UITableViewDelegate.swift */; };
+		C7D347672AB9DA7600D3A6C4 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D3472D2AB9DA7600D3A6C4 /* Image.swift */; };
+		C7D347682AB9DA7600D3A6C4 /* WrapperCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D3472E2AB9DA7600D3A6C4 /* WrapperCell.swift */; };
+		C7D347692AB9DA7600D3A6C4 /* TextContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D3472F2AB9DA7600D3A6C4 /* TextContent.swift */; };
+		C7D3476A2AB9DA7600D3A6C4 /* Buildable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D347302AB9DA7600D3A6C4 /* Buildable.swift */; };
+		C7D3476B2AB9DA7600D3A6C4 /* StringFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D347312AB9DA7600D3A6C4 /* StringFormatter.swift */; };
+		C7D3476C2AB9DA7600D3A6C4 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D347322AB9DA7600D3A6C4 /* Color.swift */; };
+		C7D3476D2AB9DA7600D3A6C4 /* StringFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D347332AB9DA7600D3A6C4 /* StringFormatters.swift */; };
+		C7D3476E2AB9DA7600D3A6C4 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D347352AB9DA7600D3A6C4 /* UIView+Extensions.swift */; };
+		C7D3476F2AB9DA7600D3A6C4 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D347362AB9DA7600D3A6C4 /* String+Extensions.swift */; };
+		C7D347702AB9DA7600D3A6C4 /* NSAttributedString+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D347372AB9DA7600D3A6C4 /* NSAttributedString+Extensions.swift */; };
+		C7D347712AB9DA7600D3A6C4 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D347382AB9DA7600D3A6C4 /* UITableView+Extensions.swift */; };
+		C7D347722AB9DA7600D3A6C4 /* Optional+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D347392AB9DA7600D3A6C4 /* Optional+Extensions.swift */; };
+		C7D347732AB9DA7600D3A6C4 /* Button+ConfigurableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D3473B2AB9DA7600D3A6C4 /* Button+ConfigurableView.swift */; };
+		C7D347742AB9DA7600D3A6C4 /* Label+ConfigurableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D3473C2AB9DA7600D3A6C4 /* Label+ConfigurableView.swift */; };
+		C7D347752AB9DA7600D3A6C4 /* TextField+ConfigurableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D3473D2AB9DA7600D3A6C4 /* TextField+ConfigurableView.swift */; };
+		C7D347762AB9DA7600D3A6C4 /* UIPickerView+ConfigurableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D3473E2AB9DA7600D3A6C4 /* UIPickerView+ConfigurableView.swift */; };
+		C7D347772AB9DA7600D3A6C4 /* UIDatePicker+ConfigurableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D3473F2AB9DA7600D3A6C4 /* UIDatePicker+ConfigurableView.swift */; };
+		C7D347782AB9DA7600D3A6C4 /* UIImageView+ConfigurableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D347402AB9DA7600D3A6C4 /* UIImageView+ConfigurableView.swift */; };
+		C7D347792AB9DA7600D3A6C4 /* UISegmentedControl+ConfigurableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D347412AB9DA7600D3A6C4 /* UISegmentedControl+ConfigurableView.swift */; };
+		C7D3477A2AB9DA7600D3A6C4 /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D347422AB9DA7600D3A6C4 /* UILabel+Extensions.swift */; };
+		C7D3477B2AB9DA7600D3A6C4 /* CGRect+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D347432AB9DA7600D3A6C4 /* CGRect+Extensions.swift */; };
+		C7D3477C2AB9DA7600D3A6C4 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D347442AB9DA7600D3A6C4 /* Double+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,13 +90,11 @@
 /* Begin PBXFileReference section */
 		1B6E24D01C5A21513081465B /* Pods-Duxer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Duxer_Example.release.xcconfig"; path = "Target Support Files/Pods-Duxer_Example/Pods-Duxer_Example.release.xcconfig"; sourceTree = "<group>"; };
 		2E6F1B4186C487BA056EBCA7 /* Pods-Duxer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Duxer_Example.debug.xcconfig"; path = "Target Support Files/Pods-Duxer_Example/Pods-Duxer_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		31BEB4761246D6CE83A08B47 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		5DE0799298E11960630409DD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		31BEB4761246D6CE83A08B47 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		5DE0799298E11960630409DD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* Duxer_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Duxer_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* Duxer_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Duxer_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,7 +102,69 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		8370E4FCB8C24EFE02356611 /* Pods-Duxer_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Duxer_Tests.release.xcconfig"; path = "Target Support Files/Pods-Duxer_Tests/Pods-Duxer_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		87C479DDB431E8B02AE7E806 /* Pods_Duxer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Duxer_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AF1342118C15F43FEC8965D2 /* Duxer.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = Duxer.podspec; path = ../Duxer.podspec; sourceTree = "<group>"; };
+		AF1342118C15F43FEC8965D2 /* Duxer.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Duxer.podspec; path = ../Duxer.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C7D346F42AB9DA5600D3A6C4 /* Actions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
+		C7D346F52AB9DA5600D3A6C4 /* DXAppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DXAppState.swift; sourceTree = "<group>"; };
+		C7D346F62AB9DA5600D3A6C4 /* Middlewares.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Middlewares.swift; sourceTree = "<group>"; };
+		C7D346F72AB9DA5600D3A6C4 /* Reducers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reducers.swift; sourceTree = "<group>"; };
+		C7D346F82AB9DA5600D3A6C4 /* Thunks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Thunks.swift; sourceTree = "<group>"; };
+		C7D346F92AB9DA5600D3A6C4 /* DXStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DXStore.swift; sourceTree = "<group>"; };
+		C7D347012AB9DA7600D3A6C4 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		C7D347022AB9DA7600D3A6C4 /* C2CTransferView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = C2CTransferView.swift; sourceTree = "<group>"; };
+		C7D347042AB9DA7600D3A6C4 /* Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		C7D347052AB9DA7600D3A6C4 /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		C7D347062AB9DA7600D3A6C4 /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		C7D347092AB9DA7600D3A6C4 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C7D3470A2AB9DA7600D3A6C4 /* HomeModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModels.swift; sourceTree = "<group>"; };
+		C7D3470B2AB9DA7600D3A6C4 /* HomeViewController+UITableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomeViewController+UITableViewDataSource.swift"; sourceTree = "<group>"; };
+		C7D3470C2AB9DA7600D3A6C4 /* HomeViewController+UITableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HomeViewController+UITableViewDelegate.swift"; sourceTree = "<group>"; };
+		C7D3470D2AB9DA7600D3A6C4 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C7D3470F2AB9DA7600D3A6C4 /* RegistrationModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationModels.swift; sourceTree = "<group>"; };
+		C7D347102AB9DA7600D3A6C4 /* RegistrationViewController+UITableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RegistrationViewController+UITableViewDataSource.swift"; sourceTree = "<group>"; };
+		C7D347112AB9DA7600D3A6C4 /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		C7D347122AB9DA7600D3A6C4 /* RegistrationViewController+UITextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RegistrationViewController+UITextFieldDelegate.swift"; sourceTree = "<group>"; };
+		C7D347142AB9DA7600D3A6C4 /* OrderCardModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderCardModels.swift; sourceTree = "<group>"; };
+		C7D347152AB9DA7600D3A6C4 /* OrderCardViewController+UITableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OrderCardViewController+UITableViewDataSource.swift"; sourceTree = "<group>"; };
+		C7D347162AB9DA7600D3A6C4 /* OrderCardViewController+UITextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OrderCardViewController+UITextFieldDelegate.swift"; sourceTree = "<group>"; };
+		C7D347172AB9DA7600D3A6C4 /* OrderCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderCardViewController.swift; sourceTree = "<group>"; };
+		C7D347192AB9DA7600D3A6C4 /* TransferCardSelectionViewController+UITableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TransferCardSelectionViewController+UITableViewDataSource.swift"; sourceTree = "<group>"; };
+		C7D3471A2AB9DA7600D3A6C4 /* TransferCardSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferCardSelectionViewController.swift; sourceTree = "<group>"; };
+		C7D3471B2AB9DA7600D3A6C4 /* TransferCardSelectionViewController+UITableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TransferCardSelectionViewController+UITableViewDelegate.swift"; sourceTree = "<group>"; };
+		C7D3471D2AB9DA7600D3A6C4 /* AddCardViewController+UITableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AddCardViewController+UITableViewDataSource.swift"; sourceTree = "<group>"; };
+		C7D3471E2AB9DA7600D3A6C4 /* AddCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCardViewController.swift; sourceTree = "<group>"; };
+		C7D3471F2AB9DA7600D3A6C4 /* AddCardViewController+UITextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AddCardViewController+UITextFieldDelegate.swift"; sourceTree = "<group>"; };
+		C7D347202AB9DA7600D3A6C4 /* AddCardModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCardModels.swift; sourceTree = "<group>"; };
+		C7D347222AB9DA7600D3A6C4 /* CardDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardDetailViewController.swift; sourceTree = "<group>"; };
+		C7D347232AB9DA7600D3A6C4 /* CardDetailViewController+UITableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardDetailViewController+UITableViewDelegate.swift"; sourceTree = "<group>"; };
+		C7D347242AB9DA7600D3A6C4 /* CardDetailViewController+UITableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardDetailViewController+UITableViewDataSource.swift"; sourceTree = "<group>"; };
+		C7D347252AB9DA7600D3A6C4 /* CardDetailModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardDetailModels.swift; sourceTree = "<group>"; };
+		C7D347272AB9DA7600D3A6C4 /* TransferViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferViewController.swift; sourceTree = "<group>"; };
+		C7D347282AB9DA7600D3A6C4 /* TransferModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferModels.swift; sourceTree = "<group>"; };
+		C7D347292AB9DA7600D3A6C4 /* TransferViewController+UITextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TransferViewController+UITextFieldDelegate.swift"; sourceTree = "<group>"; };
+		C7D3472A2AB9DA7600D3A6C4 /* TransferViewController+UITableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TransferViewController+UITableViewDataSource.swift"; sourceTree = "<group>"; };
+		C7D3472B2AB9DA7600D3A6C4 /* TransferViewController+UITableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TransferViewController+UITableViewDelegate.swift"; sourceTree = "<group>"; };
+		C7D3472D2AB9DA7600D3A6C4 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		C7D3472E2AB9DA7600D3A6C4 /* WrapperCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WrapperCell.swift; sourceTree = "<group>"; };
+		C7D3472F2AB9DA7600D3A6C4 /* TextContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextContent.swift; sourceTree = "<group>"; };
+		C7D347302AB9DA7600D3A6C4 /* Buildable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buildable.swift; sourceTree = "<group>"; };
+		C7D347312AB9DA7600D3A6C4 /* StringFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringFormatter.swift; sourceTree = "<group>"; };
+		C7D347322AB9DA7600D3A6C4 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		C7D347332AB9DA7600D3A6C4 /* StringFormatters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringFormatters.swift; sourceTree = "<group>"; };
+		C7D347352AB9DA7600D3A6C4 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		C7D347362AB9DA7600D3A6C4 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		C7D347372AB9DA7600D3A6C4 /* NSAttributedString+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Extensions.swift"; sourceTree = "<group>"; };
+		C7D347382AB9DA7600D3A6C4 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		C7D347392AB9DA7600D3A6C4 /* Optional+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional+Extensions.swift"; sourceTree = "<group>"; };
+		C7D3473B2AB9DA7600D3A6C4 /* Button+ConfigurableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Button+ConfigurableView.swift"; sourceTree = "<group>"; };
+		C7D3473C2AB9DA7600D3A6C4 /* Label+ConfigurableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Label+ConfigurableView.swift"; sourceTree = "<group>"; };
+		C7D3473D2AB9DA7600D3A6C4 /* TextField+ConfigurableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TextField+ConfigurableView.swift"; sourceTree = "<group>"; };
+		C7D3473E2AB9DA7600D3A6C4 /* UIPickerView+ConfigurableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIPickerView+ConfigurableView.swift"; sourceTree = "<group>"; };
+		C7D3473F2AB9DA7600D3A6C4 /* UIDatePicker+ConfigurableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDatePicker+ConfigurableView.swift"; sourceTree = "<group>"; };
+		C7D347402AB9DA7600D3A6C4 /* UIImageView+ConfigurableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+ConfigurableView.swift"; sourceTree = "<group>"; };
+		C7D347412AB9DA7600D3A6C4 /* UISegmentedControl+ConfigurableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+ConfigurableView.swift"; sourceTree = "<group>"; };
+		C7D347422AB9DA7600D3A6C4 /* UILabel+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Extensions.swift"; sourceTree = "<group>"; };
+		C7D347432AB9DA7600D3A6C4 /* CGRect+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+Extensions.swift"; sourceTree = "<group>"; };
+		C7D347442AB9DA7600D3A6C4 /* Double+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
 		D396222D5F7732DD70B829ED /* Pods-Duxer_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Duxer_Tests.debug.xcconfig"; path = "Target Support Files/Pods-Duxer_Tests/Pods-Duxer_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		FD705E5E261AFEE441212810 /* Pods_Duxer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Duxer_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -94,8 +214,11 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
+				C7D347342AB9DA7600D3A6C4 /* Extensions */,
+				C7D347072AB9DA7600D3A6C4 /* Screens */,
+				C7D3472C2AB9DA7600D3A6C4 /* Utilities */,
+				C7D347002AB9DA7600D3A6C4 /* Views */,
+				C7D346F22AB9DA4200D3A6C4 /* State */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
@@ -148,6 +271,175 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C7D346F22AB9DA4200D3A6C4 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				C7D346F42AB9DA5600D3A6C4 /* Actions.swift */,
+				C7D346F52AB9DA5600D3A6C4 /* DXAppState.swift */,
+				C7D346F92AB9DA5600D3A6C4 /* DXStore.swift */,
+				C7D346F62AB9DA5600D3A6C4 /* Middlewares.swift */,
+				C7D346F72AB9DA5600D3A6C4 /* Reducers.swift */,
+				C7D346F82AB9DA5600D3A6C4 /* Thunks.swift */,
+			);
+			name = State;
+			sourceTree = "<group>";
+		};
+		C7D347002AB9DA7600D3A6C4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C7D347012AB9DA7600D3A6C4 /* CardView.swift */,
+				C7D347022AB9DA7600D3A6C4 /* C2CTransferView.swift */,
+				C7D347032AB9DA7600D3A6C4 /* BaseViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C7D347032AB9DA7600D3A6C4 /* BaseViews */ = {
+			isa = PBXGroup;
+			children = (
+				C7D347042AB9DA7600D3A6C4 /* Label.swift */,
+				C7D347052AB9DA7600D3A6C4 /* TextField.swift */,
+				C7D347062AB9DA7600D3A6C4 /* Button.swift */,
+			);
+			path = BaseViews;
+			sourceTree = "<group>";
+		};
+		C7D347072AB9DA7600D3A6C4 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				C7D347082AB9DA7600D3A6C4 /* Home */,
+				C7D3470D2AB9DA7600D3A6C4 /* ViewController.swift */,
+				C7D3470E2AB9DA7600D3A6C4 /* Registration */,
+				C7D347132AB9DA7600D3A6C4 /* OrderCard */,
+				C7D347182AB9DA7600D3A6C4 /* TransferCardSelectionViewController */,
+				C7D3471C2AB9DA7600D3A6C4 /* AddCard */,
+				C7D347212AB9DA7600D3A6C4 /* CardDetail */,
+				C7D347262AB9DA7600D3A6C4 /* TransferViewController */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		C7D347082AB9DA7600D3A6C4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C7D347092AB9DA7600D3A6C4 /* HomeViewController.swift */,
+				C7D3470A2AB9DA7600D3A6C4 /* HomeModels.swift */,
+				C7D3470B2AB9DA7600D3A6C4 /* HomeViewController+UITableViewDataSource.swift */,
+				C7D3470C2AB9DA7600D3A6C4 /* HomeViewController+UITableViewDelegate.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C7D3470E2AB9DA7600D3A6C4 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				C7D3470F2AB9DA7600D3A6C4 /* RegistrationModels.swift */,
+				C7D347102AB9DA7600D3A6C4 /* RegistrationViewController+UITableViewDataSource.swift */,
+				C7D347112AB9DA7600D3A6C4 /* RegistrationViewController.swift */,
+				C7D347122AB9DA7600D3A6C4 /* RegistrationViewController+UITextFieldDelegate.swift */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		C7D347132AB9DA7600D3A6C4 /* OrderCard */ = {
+			isa = PBXGroup;
+			children = (
+				C7D347142AB9DA7600D3A6C4 /* OrderCardModels.swift */,
+				C7D347152AB9DA7600D3A6C4 /* OrderCardViewController+UITableViewDataSource.swift */,
+				C7D347162AB9DA7600D3A6C4 /* OrderCardViewController+UITextFieldDelegate.swift */,
+				C7D347172AB9DA7600D3A6C4 /* OrderCardViewController.swift */,
+			);
+			path = OrderCard;
+			sourceTree = "<group>";
+		};
+		C7D347182AB9DA7600D3A6C4 /* TransferCardSelectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C7D347192AB9DA7600D3A6C4 /* TransferCardSelectionViewController+UITableViewDataSource.swift */,
+				C7D3471A2AB9DA7600D3A6C4 /* TransferCardSelectionViewController.swift */,
+				C7D3471B2AB9DA7600D3A6C4 /* TransferCardSelectionViewController+UITableViewDelegate.swift */,
+			);
+			path = TransferCardSelectionViewController;
+			sourceTree = "<group>";
+		};
+		C7D3471C2AB9DA7600D3A6C4 /* AddCard */ = {
+			isa = PBXGroup;
+			children = (
+				C7D3471D2AB9DA7600D3A6C4 /* AddCardViewController+UITableViewDataSource.swift */,
+				C7D3471E2AB9DA7600D3A6C4 /* AddCardViewController.swift */,
+				C7D3471F2AB9DA7600D3A6C4 /* AddCardViewController+UITextFieldDelegate.swift */,
+				C7D347202AB9DA7600D3A6C4 /* AddCardModels.swift */,
+			);
+			path = AddCard;
+			sourceTree = "<group>";
+		};
+		C7D347212AB9DA7600D3A6C4 /* CardDetail */ = {
+			isa = PBXGroup;
+			children = (
+				C7D347222AB9DA7600D3A6C4 /* CardDetailViewController.swift */,
+				C7D347232AB9DA7600D3A6C4 /* CardDetailViewController+UITableViewDelegate.swift */,
+				C7D347242AB9DA7600D3A6C4 /* CardDetailViewController+UITableViewDataSource.swift */,
+				C7D347252AB9DA7600D3A6C4 /* CardDetailModels.swift */,
+			);
+			path = CardDetail;
+			sourceTree = "<group>";
+		};
+		C7D347262AB9DA7600D3A6C4 /* TransferViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C7D347272AB9DA7600D3A6C4 /* TransferViewController.swift */,
+				C7D347282AB9DA7600D3A6C4 /* TransferModels.swift */,
+				C7D347292AB9DA7600D3A6C4 /* TransferViewController+UITextFieldDelegate.swift */,
+				C7D3472A2AB9DA7600D3A6C4 /* TransferViewController+UITableViewDataSource.swift */,
+				C7D3472B2AB9DA7600D3A6C4 /* TransferViewController+UITableViewDelegate.swift */,
+			);
+			path = TransferViewController;
+			sourceTree = "<group>";
+		};
+		C7D3472C2AB9DA7600D3A6C4 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C7D3472D2AB9DA7600D3A6C4 /* Image.swift */,
+				C7D3472E2AB9DA7600D3A6C4 /* WrapperCell.swift */,
+				C7D3472F2AB9DA7600D3A6C4 /* TextContent.swift */,
+				C7D347302AB9DA7600D3A6C4 /* Buildable.swift */,
+				C7D347312AB9DA7600D3A6C4 /* StringFormatter.swift */,
+				C7D347322AB9DA7600D3A6C4 /* Color.swift */,
+				C7D347332AB9DA7600D3A6C4 /* StringFormatters.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		C7D347342AB9DA7600D3A6C4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C7D347352AB9DA7600D3A6C4 /* UIView+Extensions.swift */,
+				C7D347362AB9DA7600D3A6C4 /* String+Extensions.swift */,
+				C7D347372AB9DA7600D3A6C4 /* NSAttributedString+Extensions.swift */,
+				C7D347382AB9DA7600D3A6C4 /* UITableView+Extensions.swift */,
+				C7D347392AB9DA7600D3A6C4 /* Optional+Extensions.swift */,
+				C7D3473A2AB9DA7600D3A6C4 /* ConfigurableViews */,
+				C7D347422AB9DA7600D3A6C4 /* UILabel+Extensions.swift */,
+				C7D347432AB9DA7600D3A6C4 /* CGRect+Extensions.swift */,
+				C7D347442AB9DA7600D3A6C4 /* Double+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C7D3473A2AB9DA7600D3A6C4 /* ConfigurableViews */ = {
+			isa = PBXGroup;
+			children = (
+				C7D3473B2AB9DA7600D3A6C4 /* Button+ConfigurableView.swift */,
+				C7D3473C2AB9DA7600D3A6C4 /* Label+ConfigurableView.swift */,
+				C7D3473D2AB9DA7600D3A6C4 /* TextField+ConfigurableView.swift */,
+				C7D3473E2AB9DA7600D3A6C4 /* UIPickerView+ConfigurableView.swift */,
+				C7D3473F2AB9DA7600D3A6C4 /* UIDatePicker+ConfigurableView.swift */,
+				C7D347402AB9DA7600D3A6C4 /* UIImageView+ConfigurableView.swift */,
+				C7D347412AB9DA7600D3A6C4 /* UISegmentedControl+ConfigurableView.swift */,
+			);
+			path = ConfigurableViews;
+			sourceTree = "<group>";
+		};
 		D3E481326C4A897E2B885F32 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,7 +448,6 @@
 				D396222D5F7732DD70B829ED /* Pods-Duxer_Tests.debug.xcconfig */,
 				8370E4FCB8C24EFE02356611 /* Pods-Duxer_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -171,7 +462,7 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				AF20B12E322195B9DA8EAF57 /* [CP] Embed Pods Frameworks */,
+				8EA6D0F9F2A2B47C8B4C7D0F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -218,7 +509,7 @@
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = "";
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
@@ -228,6 +519,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -247,7 +539,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
@@ -263,6 +554,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		8EA6D0F9F2A2B47C8B4C7D0F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Duxer_Example/Pods-Duxer_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Duxer/Duxer.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Duxer.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Duxer_Example/Pods-Duxer_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		922D2E5500BCA68C1E0CC50A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -281,24 +590,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Duxer_Tests/Pods-Duxer_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AF20B12E322195B9DA8EAF57 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Duxer_Example/Pods-Duxer_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Duxer/Duxer.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Duxer.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Duxer_Example/Pods-Duxer_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AF256D0CB7604F58384B509A /* [CP] Check Pods Manifest.lock */ = {
@@ -352,7 +643,68 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				C7D347692AB9DA7600D3A6C4 /* TextContent.swift in Sources */,
+				C7D3475D2AB9DA7600D3A6C4 /* AddCardModels.swift in Sources */,
+				C7D3476E2AB9DA7600D3A6C4 /* UIView+Extensions.swift in Sources */,
+				C7D347462AB9DA7600D3A6C4 /* C2CTransferView.swift in Sources */,
+				C7D347732AB9DA7600D3A6C4 /* Button+ConfigurableView.swift in Sources */,
+				C7D3474B2AB9DA7600D3A6C4 /* HomeModels.swift in Sources */,
+				C7D347542AB9DA7600D3A6C4 /* OrderCardViewController+UITableViewDataSource.swift in Sources */,
+				C7D3476C2AB9DA7600D3A6C4 /* Color.swift in Sources */,
+				C7D347762AB9DA7600D3A6C4 /* UIPickerView+ConfigurableView.swift in Sources */,
+				C7D347662AB9DA7600D3A6C4 /* TransferViewController+UITableViewDelegate.swift in Sources */,
+				C7D3476A2AB9DA7600D3A6C4 /* Buildable.swift in Sources */,
+				C7D347552AB9DA7600D3A6C4 /* OrderCardViewController+UITextFieldDelegate.swift in Sources */,
+				C7D347612AB9DA7600D3A6C4 /* CardDetailModels.swift in Sources */,
+				C7D346FD2AB9DA5600D3A6C4 /* Reducers.swift in Sources */,
+				C7D347452AB9DA7600D3A6C4 /* CardView.swift in Sources */,
+				C7D3474D2AB9DA7600D3A6C4 /* HomeViewController+UITableViewDelegate.swift in Sources */,
+				C7D347782AB9DA7600D3A6C4 /* UIImageView+ConfigurableView.swift in Sources */,
+				C7D3475A2AB9DA7600D3A6C4 /* AddCardViewController+UITableViewDataSource.swift in Sources */,
+				C7D3476D2AB9DA7600D3A6C4 /* StringFormatters.swift in Sources */,
+				C7D3476B2AB9DA7600D3A6C4 /* StringFormatter.swift in Sources */,
+				C7D3477A2AB9DA7600D3A6C4 /* UILabel+Extensions.swift in Sources */,
+				C7D347482AB9DA7600D3A6C4 /* TextField.swift in Sources */,
+				C7D346FA2AB9DA5600D3A6C4 /* Actions.swift in Sources */,
+				C7D347752AB9DA7600D3A6C4 /* TextField+ConfigurableView.swift in Sources */,
+				C7D3475F2AB9DA7600D3A6C4 /* CardDetailViewController+UITableViewDelegate.swift in Sources */,
+				C7D3474A2AB9DA7600D3A6C4 /* HomeViewController.swift in Sources */,
+				C7D347522AB9DA7600D3A6C4 /* RegistrationViewController+UITextFieldDelegate.swift in Sources */,
+				C7D3475E2AB9DA7600D3A6C4 /* CardDetailViewController.swift in Sources */,
+				C7D347592AB9DA7600D3A6C4 /* TransferCardSelectionViewController+UITableViewDelegate.swift in Sources */,
+				C7D347472AB9DA7600D3A6C4 /* Label.swift in Sources */,
+				C7D347532AB9DA7600D3A6C4 /* OrderCardModels.swift in Sources */,
+				C7D347652AB9DA7600D3A6C4 /* TransferViewController+UITableViewDataSource.swift in Sources */,
+				C7D347602AB9DA7600D3A6C4 /* CardDetailViewController+UITableViewDataSource.swift in Sources */,
+				C7D347672AB9DA7600D3A6C4 /* Image.swift in Sources */,
+				C7D347742AB9DA7600D3A6C4 /* Label+ConfigurableView.swift in Sources */,
+				C7D3474C2AB9DA7600D3A6C4 /* HomeViewController+UITableViewDataSource.swift in Sources */,
+				C7D346FE2AB9DA5600D3A6C4 /* Thunks.swift in Sources */,
+				C7D347562AB9DA7600D3A6C4 /* OrderCardViewController.swift in Sources */,
+				C7D347632AB9DA7600D3A6C4 /* TransferModels.swift in Sources */,
+				C7D347582AB9DA7600D3A6C4 /* TransferCardSelectionViewController.swift in Sources */,
+				C7D3477C2AB9DA7600D3A6C4 /* Double+Extensions.swift in Sources */,
+				C7D347572AB9DA7600D3A6C4 /* TransferCardSelectionViewController+UITableViewDataSource.swift in Sources */,
+				C7D3474F2AB9DA7600D3A6C4 /* RegistrationModels.swift in Sources */,
+				C7D346FC2AB9DA5600D3A6C4 /* Middlewares.swift in Sources */,
+				C7D347712AB9DA7600D3A6C4 /* UITableView+Extensions.swift in Sources */,
+				C7D3475B2AB9DA7600D3A6C4 /* AddCardViewController.swift in Sources */,
+				C7D3474E2AB9DA7600D3A6C4 /* ViewController.swift in Sources */,
+				C7D3477B2AB9DA7600D3A6C4 /* CGRect+Extensions.swift in Sources */,
+				C7D347682AB9DA7600D3A6C4 /* WrapperCell.swift in Sources */,
+				C7D347622AB9DA7600D3A6C4 /* TransferViewController.swift in Sources */,
+				C7D347702AB9DA7600D3A6C4 /* NSAttributedString+Extensions.swift in Sources */,
+				C7D347722AB9DA7600D3A6C4 /* Optional+Extensions.swift in Sources */,
+				C7D3475C2AB9DA7600D3A6C4 /* AddCardViewController+UITextFieldDelegate.swift in Sources */,
+				C7D346FB2AB9DA5600D3A6C4 /* DXAppState.swift in Sources */,
+				C7D346FF2AB9DA5600D3A6C4 /* DXStore.swift in Sources */,
+				C7D347492AB9DA7600D3A6C4 /* Button.swift in Sources */,
+				C7D347772AB9DA7600D3A6C4 /* UIDatePicker+ConfigurableView.swift in Sources */,
+				C7D3476F2AB9DA7600D3A6C4 /* String+Extensions.swift in Sources */,
+				C7D347642AB9DA7600D3A6C4 /* TransferViewController+UITextFieldDelegate.swift in Sources */,
+				C7D347512AB9DA7600D3A6C4 /* RegistrationViewController.swift in Sources */,
+				C7D347502AB9DA7600D3A6C4 /* RegistrationViewController+UITableViewDataSource.swift in Sources */,
+				C7D347792AB9DA7600D3A6C4 /* UISegmentedControl+ConfigurableView.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,14 +728,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				607FACDA1AFB9204008FA782 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -440,7 +784,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -486,7 +830,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -500,12 +844,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Duxer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -515,12 +860,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Duxer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -541,7 +887,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Duxer_Example.app/Duxer_Example";
 			};
 			name = Debug;
@@ -559,7 +905,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Duxer_Example.app/Duxer_Example";
 			};
 			name = Release;

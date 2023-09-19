@@ -1,0 +1,6 @@
+framework module Duxer {
+  umbrella header "Duxer-umbrella.h"
+
+  export *
+  module * { export * }
+}
