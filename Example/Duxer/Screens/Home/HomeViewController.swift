@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeViewController: ViewController {
+class HomeViewController: ViewController<DXAppState> {
 
     lazy var tableView: UITableView = .build(self.buildTableView)
 
@@ -16,6 +16,8 @@ class HomeViewController: ViewController {
             self.tableView.reloadData()
         }
     }
+
+    override var stateProjector: StateProjector? { AppStateProjector }
 
     override func viewDidLoad() {
         super.viewDidLoad()

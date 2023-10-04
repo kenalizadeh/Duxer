@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class AddCardViewController: ViewController {
+final class AddCardViewController: ViewController<DXCardState> {
 
     private lazy var tableView: UITableView = .build(self.buildTableView)
     private lazy var continueButton: Button = .build(self.buildContinuteButton)
@@ -22,6 +22,8 @@ final class AddCardViewController: ViewController {
         }
     }
 
+    override var stateProjector: StateProjector? { CardStateProjector }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -35,10 +37,10 @@ final class AddCardViewController: ViewController {
         self.formData.id = self.cardID
     }
 
-    override func render(state: DXAppState) {
+    override func render(state: DXCardState) {
 
         guard let card = self.formData.card,
-              state.card.cards.contains(where: { $0.id == card.id })
+              state.cards.contains(where: { $0.id == card.id })
         else { return }
 
         self.navigationController?.popToRootViewController(animated: true)

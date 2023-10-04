@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class TransferViewController: ViewController {
+final class TransferViewController: ViewController<DXTransactionState> {
 
     private lazy var tableView: UITableView = .build(self.buildTableView)
     private lazy var continueButton: Button = .build(self.buildContinuteButton)
@@ -25,6 +25,8 @@ final class TransferViewController: ViewController {
             self.evaluateFormData()
         }
     }
+
+    override var stateProjector: StateProjector? { TransactionStateProjector }
 
     @available(*, unavailable)
     required init?(coder: NSCoder) { fatalError("init(coder:) has not been implemented") }
@@ -45,12 +47,12 @@ final class TransferViewController: ViewController {
         ]
     }
 
-    override func render(state: DXAppState) {
+    override func render(state: DXTransactionState) {
 
-        self.transferForm.recipient = state.transaction.pendingTransfer?.recipient
+        self.transferForm.recipient = state.pendingTransfer?.recipient
         self.tableData = makeTableData(form: self.transferForm)
 
-        if state.transaction.transferSuccess {
+        if state.transferSuccess {
             self.navigationController?.popViewController(animated: true)
         }
     }

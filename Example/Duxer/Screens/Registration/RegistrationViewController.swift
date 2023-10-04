@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class RegistrationViewController: ViewController {
+final class RegistrationViewController: ViewController<DXUserState> {
 
     lazy var tableView: UITableView = .build(self.buildTableView)
     lazy var continueButton: Button = .build(self.buildContinuteButton)
@@ -22,6 +22,8 @@ final class RegistrationViewController: ViewController {
         }
     }
 
+    override var stateProjector: StateProjector? { UserStateProjector }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -33,12 +35,12 @@ final class RegistrationViewController: ViewController {
         self.view.addGestureRecognizer(self.tapGestureRecognizer)
     }
 
-    override func render(state: DXAppState) {
+    override func render(state: DXUserState) {
 
-        guard state.user.userData.isNotNil
+        guard state.userData.isNotNil
         else { return }
 
-        guard case .some = state.user.userData
+        guard case .some = state.userData
         else { return }
 
         self.navigationController?.setViewControllers([HomeViewController()], animated: true)

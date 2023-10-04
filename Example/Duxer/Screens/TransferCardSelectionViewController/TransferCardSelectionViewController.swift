@@ -7,13 +7,15 @@
 
 import UIKit
 
-final class TransferCardSelectionViewController: ViewController {
+final class TransferCardSelectionViewController: ViewController<DXCardState> {
 
     private lazy var tableView: UITableView = .build(self.buildTableView)
 
     var tableData: [Card] = []
 
     var transferForm: TransferForm
+
+    override var stateProjector: StateProjector? { CardStateProjector }
 
     @available(*, unavailable)
     required init?(coder: NSCoder) { fatalError("init(coder:) has not been implemented") }
@@ -30,9 +32,9 @@ final class TransferCardSelectionViewController: ViewController {
         _ = self.tableView
     }
 
-    override func render(state: DXAppState) {
+    override func render(state: DXCardState) {
 
-        let cards = state.card.cards.filter { $0.id != self.transferForm.sender.id }
+        let cards = state.cards.filter { $0.id != self.transferForm.sender.id }
 
         self.tableData = cards
         self.tableView.reloadData()

@@ -32,3 +32,20 @@ struct DXTransactionState: Equatable {
     var error: DXTransactionError?
     var transferSuccess: Bool = false
 }
+
+// Projectors
+let AppStateProjector: ((DXAppState) -> DXAppState) = { state in
+    state
+}
+
+let UserStateProjector: ((DXAppState) -> DXUserState) = { state in
+    state.user
+}
+
+let CardStateProjector: ((DXAppState) -> DXCardState) = { state in
+    state.card
+}
+
+let TransactionStateProjector: ((DXAppState) -> DXTransactionState) = { state in
+    state.transaction
+}

@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class OrderCardViewController: ViewController {
+final class OrderCardViewController: ViewController<DXCardState> {
 
     private lazy var tableView: UITableView = .build(self.buildTableView)
     private lazy var continueButton: Button = .build(self.buildContinuteButton)
@@ -21,6 +21,8 @@ final class OrderCardViewController: ViewController {
             self.evaluateFormData()
         }
     }
+
+    override var stateProjector: StateProjector? { CardStateProjector }
 
     override func viewDidLoad() {
         super.viewDidLoad()

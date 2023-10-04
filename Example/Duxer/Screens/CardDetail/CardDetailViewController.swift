@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class CardDetailViewController: ViewController {
+final class CardDetailViewController: ViewController<DXAppState> {
 
     lazy var tableView: UITableView = .build(self.buildTableView)
 
@@ -18,6 +18,8 @@ final class CardDetailViewController: ViewController {
     }
 
     var card: Card
+
+    override var stateProjector: StateProjector? { AppStateProjector }
 
     @available(*, unavailable)
     required init?(coder: NSCoder) { fatalError("init(coder:) has not been implemented") }
