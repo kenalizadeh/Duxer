@@ -2,7 +2,7 @@
 //  Reducers.swift
 //  DuxerExample
 //
-//  Created by 004230 on 23.04.23.
+//  Created by Kenan Alizadeh on 23.04.23.
 //
 
 import Duxer
@@ -68,6 +68,15 @@ let transactionReducer: Reducer<DXTransactionState> = { state, action in
 
     case let .transfer(transfer):
         state.transactions.append(transfer)
+        state.transferSuccess = true
+
+    case let .error(error):
+        state.error = error
+
+    case .reset:
+        state.pendingTransfer = nil
+        state.error = nil
+        state.transferSuccess = false
     }
 
     return state

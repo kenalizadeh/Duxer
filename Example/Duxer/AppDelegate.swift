@@ -2,8 +2,7 @@
 //  AppDelegate.swift
 //  Duxer
 //
-//  Created by 004230 on 09/19/2023.
-//  Copyright (c) 2023 004230. All rights reserved.
+//  Created by Kenan Alizadeh on 09/19/2023.
 //
 
 import UIKit

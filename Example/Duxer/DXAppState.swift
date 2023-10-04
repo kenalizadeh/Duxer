@@ -2,10 +2,11 @@
 //  DXAppState.swift
 //  DuxerExample
 //
-//  Created by 004230 on 23.04.23.
+//  Created by Kenan Alizadeh on 23.04.23.
 //
 
 import Foundation
+import Duxer
 
 struct DXAppState: Equatable {
     var user: DXUserState = .init()
@@ -28,4 +29,6 @@ struct DXCardState: Equatable {
 struct DXTransactionState: Equatable {
     var transactions: [C2CTransfer] = []
     var pendingTransfer: TransferForm?
+    var error: DXTransactionError?
+    var transferSuccess: Bool = false
 }

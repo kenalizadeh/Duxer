@@ -2,7 +2,7 @@
 //  HomeViewController+UITableViewDataSource.swift
 //  DuxerExample
 //
-//  Created by 004230 on 24.04.23.
+//  Created by Kenan Alizadeh on 24.04.23.
 //
 
 import UIKit

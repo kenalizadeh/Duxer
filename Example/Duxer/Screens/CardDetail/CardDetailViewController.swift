@@ -2,7 +2,7 @@
 //  CardDetailViewController.swift
 //  DuxerExample
 //
-//  Created by 004230 on 24.04.23.
+//  Created by Kenan Alizadeh on 24.04.23.
 //
 
 import UIKit
@@ -33,18 +33,9 @@ final class CardDetailViewController: ViewController {
 
         self.navigationItem.setRightBarButtonItems([UIBarButtonItem(barButtonSystemItem: .trash, target: self, action: #selector(self.removeCardButtonAction))], animated: true)
         _ = self.tableView
-
-        self.store.projection { state in
-            state.card
-        }.sink { state in
-            print(":LOG:", Self.self, #function)
-        }.store(in: &self.cancellables)
-
-        self.store.dispatch(demoThunk())
     }
 
     override func render(state: DXAppState) {
-        print(":LOG:", Self.self, #function)
 
         if let card = state.card.cards.first(where: { $0.id == self.card.id }) {
             self.card = card

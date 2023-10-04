@@ -2,11 +2,13 @@
 //  ViewController.swift
 //  DuxerExample
 //
-//  Created by 004230 on 23.04.23.
+//  Created by Kenan Alizadeh on 23.04.23.
 //
 
 import UIKit
 import Combine
+import WrapperCell
+import Swild
 
 class ViewController: UIViewController {
 
@@ -26,7 +28,9 @@ class ViewController: UIViewController {
             .$state
             .subscribe(on: DispatchQueue.global())
             .receive(on: DispatchQueue.main)
-            .sink(receiveValue: self.render(state:))
+            .sink(receiveValue: { [weak self] state in
+                self?.render(state: state)
+            })
             .store(in: &self.cancellables)
     }
 

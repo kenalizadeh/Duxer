@@ -1,27 +1,35 @@
 PODS:
-  - Duxer (0.1.0)
+  - Duxer (0.0.1)
   - Nimble (10.0.0)
   - Quick (2.2.1)
+  - Swild (0.0.1)
+  - WrapperCell (0.0.1)
 
 DEPENDENCIES:
   - Duxer (from `../`)
   - Nimble (~> 10.0.0)
   - Quick (~> 2.2.0)
+  - Swild
+  - WrapperCell
 
 SPEC REPOS:
   trunk:
     - Nimble
     - Quick
+    - Swild
+    - WrapperCell
 
 EXTERNAL SOURCES:
   Duxer:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Duxer: f21a363ad8a02b7e3c7361afe40a648c3c07d9cc
+  Duxer: 858407de165ae659d8bda8e860d7529240f483f5
   Nimble: 5316ef81a170ce87baf72dd961f22f89a602ff84
   Quick: f5754d69b7013f5864c29aab9ae6f0c79c5bc200
+  Swild: fd03d086052786ba7402141b53db69e94d078e3e
+  WrapperCell: 562e86af9b1702ebd2f64ea22a7e425dff1c406e
 
-PODFILE CHECKSUM: b5ff9895e8678984527923b573264c77bfa5504a
+PODFILE CHECKSUM: 2f87303332761901391bdb60617193e29e4d8dc0
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.13.0

@@ -1,10 +1,5 @@
 # Duxer
 
-[![CI Status](https://img.shields.io/travis/004230/Duxer.svg?style=flat)](https://travis-ci.org/004230/Duxer)
-[![Version](https://img.shields.io/cocoapods/v/Duxer.svg?style=flat)](https://cocoapods.org/pods/Duxer)
-[![License](https://img.shields.io/cocoapods/l/Duxer.svg?style=flat)](https://cocoapods.org/pods/Duxer)
-[![Platform](https://img.shields.io/cocoapods/p/Duxer.svg?style=flat)](https://cocoapods.org/pods/Duxer)
-
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -22,7 +17,7 @@ pod 'Duxer'
 
 ## Author
 
-004230, 004230@ibar.int
+Kenan Alizadeh, kananalizade@gmail.com
 
 ## License
 

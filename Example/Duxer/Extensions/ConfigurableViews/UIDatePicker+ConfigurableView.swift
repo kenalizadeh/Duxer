@@ -2,10 +2,11 @@
 //  UIDatePicker+ConfigurableView.swift
 //  DuxerExample
 //
-//  Created by 004230 on 23.04.23.
+//  Created by Kenan Alizadeh on 23.04.23.
 //
 
 import UIKit
+import WrapperCell
 
 extension UIDatePicker: ConfigurableView {
 

@@ -2,7 +2,7 @@
 //  Actions.swift
 //  DuxerExample
 //
-//  Created by 004230 on 23.04.23.
+//  Created by Kenan Alizadeh on 23.04.23.
 //
 
 import Duxer
@@ -27,4 +27,6 @@ enum DXCardAction: Action {
 enum DXTransferAction: Action {
     case pendingTransferFormUpdate(TransferForm)
     case transfer(C2CTransfer)
+    case error(DXTransactionError)
+    case reset
 }

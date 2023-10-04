@@ -2,7 +2,7 @@
 //  TextContent.swift
 //  DuxerExample
 //
-//  Created by 004230 on 22.04.23.
+//  Created by Kenan Alizadeh on 22.04.23.
 //
 
 import UIKit

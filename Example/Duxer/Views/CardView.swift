@@ -2,10 +2,11 @@
 //  CardView.swift
 //  DuxerExample
 //
-//  Created by 004230 on 21.04.23.
+//  Created by Kenan Alizadeh on 21.04.23.
 //
 
 import UIKit
+import WrapperCell
 
 final class CardView: UIControl {
 

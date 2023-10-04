@@ -31,7 +31,7 @@ public class Store<State>: ObservableObject where State: Equatable {
     }
 
     public func dispatch(_ action: Action) {
-        _queue.async {
+        self._queue.async {
             self._actionSubject.send(action)
         }
     }

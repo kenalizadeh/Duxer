@@ -1,8 +1,7 @@
 //
 //  WrapperCell.swift
-//  DuxerExample
 //
-//  Created by 004230 on 21.04.23.
+//  Created by Kenan Alizadeh on 23.01.23.
 //
 
 import UIKit
@@ -50,14 +49,14 @@ public struct WrapperCellItem<Item> {
     public init(
         item: Item,
         insets: UIEdgeInsets = .zero,
-        height: CGFloat? = nil,
         backgroundColor: UIColor = .clear,
+        height: CGFloat? = nil,
         separatorSettings: WrapperCellSeparatorSettings = .init()
     ) {
         self.item = item
         self.insets = insets
-        self.height = height
         self.backgroundColor = backgroundColor
+        self.height = height
         self.separatorSettings = separatorSettings
     }
 }
@@ -73,7 +72,7 @@ public struct WrapperCellSeparatorSettings {
         isVisible: Bool = false,
         position: WrapperCellSeparatorSettings.Position = .bottom,
         insets: UIEdgeInsets = .zero,
-        color: UIColor = UIColor.lightText,
+        color: UIColor = .lightGray,
         height: CGFloat = 0.5
     ) {
         self.isVisible = isVisible
@@ -91,9 +90,11 @@ public struct WrapperCellSeparatorSettings {
 
 public class WrapperCell<View: ConfigurableView>: WrapperTableViewCell<WrapperCellItem<View.Item>> {
     private var _child: View
-    private lazy var separatorView: UIView = .build {
-        $0.translatesAutoresizingMaskIntoConstraints = false
-    }
+    private lazy var separatorView: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
 
     public var child: View { _child }
 
@@ -183,7 +184,7 @@ private extension WrapperCell {
             childHeightConstraint.constant = childHeight
         }
 
-        childHeightConstraint.isActive = childHeight.isNotNil
+        childHeightConstraint.isActive = (childHeight != nil)
 
         setNeedsLayout()
     }

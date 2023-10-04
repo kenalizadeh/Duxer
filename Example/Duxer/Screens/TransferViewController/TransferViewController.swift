@@ -2,7 +2,7 @@
 //  TransferViewController.swift
 //  DuxerExample
 //
-//  Created by 004230 on 24.04.23.
+//  Created by Kenan Alizadeh on 24.04.23.
 //
 
 import UIKit
@@ -49,6 +49,10 @@ final class TransferViewController: ViewController {
 
         self.transferForm.recipient = state.transaction.pendingTransfer?.recipient
         self.tableData = makeTableData(form: self.transferForm)
+
+        if state.transaction.transferSuccess {
+            self.navigationController?.popViewController(animated: true)
+        }
     }
 }
 
@@ -96,18 +100,17 @@ private extension TransferViewController {
     }
 
     func evaluateFormData() {
-
         self.continueButton.isEnabled = self.transferForm.isValid
     }
 
     @objc
     func continueButtonActionHandler() {
+        self.store.dispatch(DXAction.transfer(.pendingTransferFormUpdate(self.transferForm)))
 
         guard let transferData = self.transferForm.transferData
         else { return }
 
-        self.store.dispatch(DXAction.transfer(.transfer(transferData)))
-        self.navigationController?.popViewController(animated: true)
+        self.store.dispatch(transactionThunk(data: transferData))
     }
 }
 

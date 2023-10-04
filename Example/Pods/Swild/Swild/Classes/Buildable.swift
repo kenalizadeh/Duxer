@@ -1,8 +1,5 @@
 //
 //  Buildable.swift
-//  DuxerExample
-//
-//  Created by 004230 on 21.04.23.
 //
 
 import Foundation

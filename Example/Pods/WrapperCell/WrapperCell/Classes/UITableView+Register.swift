@@ -1,13 +1,13 @@
 //
-//  UITableView+Extensions.swift
-//  DuxerExample
+//  UITableView+Register.swift
+//  WrapperCell
 //
-//  Created by 004230 on 21.04.23.
+//  Created by Kenan Alizadeh on 03.10.23.
 //
 
 import UIKit
 
-extension UITableView {
+public extension UITableView {
 
     func register<V>(_ cellType: WrapperCell<V>.Type) {
         register(cellType, forCellReuseIdentifier: cellType.uniqueIdentifier)

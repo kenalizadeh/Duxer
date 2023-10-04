@@ -5,6 +5,9 @@ platform :ios, '15.0'
 target 'Duxer_Example' do
   pod 'Duxer', :path => '../'
 
+  pod 'Swild'
+  pod 'WrapperCell'
+
   target 'Duxer_Tests' do
     inherit! :search_paths
 

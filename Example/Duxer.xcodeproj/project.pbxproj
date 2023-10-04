@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4636A77849B1F23C3BBA0757 /* Pods_Duxer_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD705E5E261AFEE441212810 /* Pods_Duxer_Tests.framework */; };
+		4ED89D2D8A83F11BC99F3593 /* Pods_Duxer_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA6B887ABAD6001079C0C676 /* Pods_Duxer_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		96006615A396E488B94A1C36 /* Pods_Duxer_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87C479DDB431E8B02AE7E806 /* Pods_Duxer_Example.framework */; };
 		C7D346FA2AB9DA5600D3A6C4 /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D346F42AB9DA5600D3A6C4 /* Actions.swift */; };
 		C7D346FB2AB9DA5600D3A6C4 /* DXAppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D346F52AB9DA5600D3A6C4 /* DXAppState.swift */; };
 		C7D346FC2AB9DA5600D3A6C4 /* Middlewares.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D346F62AB9DA5600D3A6C4 /* Middlewares.swift */; };
@@ -54,16 +53,13 @@
 		C7D347652AB9DA7600D3A6C4 /* TransferViewController+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D3472A2AB9DA7600D3A6C4 /* TransferViewController+UITableViewDataSource.swift */; };
 		C7D347662AB9DA7600D3A6C4 /* TransferViewController+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D3472B2AB9DA7600D3A6C4 /* TransferViewController+UITableViewDelegate.swift */; };
 		C7D347672AB9DA7600D3A6C4 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D3472D2AB9DA7600D3A6C4 /* Image.swift */; };
-		C7D347682AB9DA7600D3A6C4 /* WrapperCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D3472E2AB9DA7600D3A6C4 /* WrapperCell.swift */; };
 		C7D347692AB9DA7600D3A6C4 /* TextContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D3472F2AB9DA7600D3A6C4 /* TextContent.swift */; };
-		C7D3476A2AB9DA7600D3A6C4 /* Buildable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D347302AB9DA7600D3A6C4 /* Buildable.swift */; };
 		C7D3476B2AB9DA7600D3A6C4 /* StringFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D347312AB9DA7600D3A6C4 /* StringFormatter.swift */; };
 		C7D3476C2AB9DA7600D3A6C4 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D347322AB9DA7600D3A6C4 /* Color.swift */; };
 		C7D3476D2AB9DA7600D3A6C4 /* StringFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D347332AB9DA7600D3A6C4 /* StringFormatters.swift */; };
 		C7D3476E2AB9DA7600D3A6C4 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D347352AB9DA7600D3A6C4 /* UIView+Extensions.swift */; };
 		C7D3476F2AB9DA7600D3A6C4 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D347362AB9DA7600D3A6C4 /* String+Extensions.swift */; };
 		C7D347702AB9DA7600D3A6C4 /* NSAttributedString+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D347372AB9DA7600D3A6C4 /* NSAttributedString+Extensions.swift */; };
-		C7D347712AB9DA7600D3A6C4 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D347382AB9DA7600D3A6C4 /* UITableView+Extensions.swift */; };
 		C7D347722AB9DA7600D3A6C4 /* Optional+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D347392AB9DA7600D3A6C4 /* Optional+Extensions.swift */; };
 		C7D347732AB9DA7600D3A6C4 /* Button+ConfigurableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D3473B2AB9DA7600D3A6C4 /* Button+ConfigurableView.swift */; };
 		C7D347742AB9DA7600D3A6C4 /* Label+ConfigurableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D3473C2AB9DA7600D3A6C4 /* Label+ConfigurableView.swift */; };
@@ -75,6 +71,7 @@
 		C7D3477A2AB9DA7600D3A6C4 /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D347422AB9DA7600D3A6C4 /* UILabel+Extensions.swift */; };
 		C7D3477B2AB9DA7600D3A6C4 /* CGRect+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D347432AB9DA7600D3A6C4 /* CGRect+Extensions.swift */; };
 		C7D3477C2AB9DA7600D3A6C4 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D347442AB9DA7600D3A6C4 /* Double+Extensions.swift */; };
+		E03F841F30F174F69ED8E86F /* Pods_Duxer_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D15CB8794721428CCC72F2 /* Pods_Duxer_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,8 +85,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1B6E24D01C5A21513081465B /* Pods-Duxer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Duxer_Example.release.xcconfig"; path = "Target Support Files/Pods-Duxer_Example/Pods-Duxer_Example.release.xcconfig"; sourceTree = "<group>"; };
-		2E6F1B4186C487BA056EBCA7 /* Pods-Duxer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Duxer_Example.debug.xcconfig"; path = "Target Support Files/Pods-Duxer_Example/Pods-Duxer_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		1A5D1060AD34F45307F0ACA4 /* Pods-Duxer_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Duxer_Tests.release.xcconfig"; path = "Target Support Files/Pods-Duxer_Tests/Pods-Duxer_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		20E2DF20BDDBFC017383DC77 /* Pods-Duxer_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Duxer_Tests.debug.xcconfig"; path = "Target Support Files/Pods-Duxer_Tests/Pods-Duxer_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		31BEB4761246D6CE83A08B47 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		5DE0799298E11960630409DD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* Duxer_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Duxer_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,8 +97,7 @@
 		607FACE51AFB9204008FA782 /* Duxer_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Duxer_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		8370E4FCB8C24EFE02356611 /* Pods-Duxer_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Duxer_Tests.release.xcconfig"; path = "Target Support Files/Pods-Duxer_Tests/Pods-Duxer_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		87C479DDB431E8B02AE7E806 /* Pods_Duxer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Duxer_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5AC6E6965B5E09D02A3F01E /* Pods-Duxer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Duxer_Example.release.xcconfig"; path = "Target Support Files/Pods-Duxer_Example/Pods-Duxer_Example.release.xcconfig"; sourceTree = "<group>"; };
 		AF1342118C15F43FEC8965D2 /* Duxer.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Duxer.podspec; path = ../Duxer.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C7D346F42AB9DA5600D3A6C4 /* Actions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
 		C7D346F52AB9DA5600D3A6C4 /* DXAppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DXAppState.swift; sourceTree = "<group>"; };
@@ -144,16 +140,13 @@
 		C7D3472A2AB9DA7600D3A6C4 /* TransferViewController+UITableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TransferViewController+UITableViewDataSource.swift"; sourceTree = "<group>"; };
 		C7D3472B2AB9DA7600D3A6C4 /* TransferViewController+UITableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TransferViewController+UITableViewDelegate.swift"; sourceTree = "<group>"; };
 		C7D3472D2AB9DA7600D3A6C4 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
-		C7D3472E2AB9DA7600D3A6C4 /* WrapperCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WrapperCell.swift; sourceTree = "<group>"; };
 		C7D3472F2AB9DA7600D3A6C4 /* TextContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextContent.swift; sourceTree = "<group>"; };
-		C7D347302AB9DA7600D3A6C4 /* Buildable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buildable.swift; sourceTree = "<group>"; };
 		C7D347312AB9DA7600D3A6C4 /* StringFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringFormatter.swift; sourceTree = "<group>"; };
 		C7D347322AB9DA7600D3A6C4 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		C7D347332AB9DA7600D3A6C4 /* StringFormatters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringFormatters.swift; sourceTree = "<group>"; };
 		C7D347352AB9DA7600D3A6C4 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		C7D347362AB9DA7600D3A6C4 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		C7D347372AB9DA7600D3A6C4 /* NSAttributedString+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Extensions.swift"; sourceTree = "<group>"; };
-		C7D347382AB9DA7600D3A6C4 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
 		C7D347392AB9DA7600D3A6C4 /* Optional+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional+Extensions.swift"; sourceTree = "<group>"; };
 		C7D3473B2AB9DA7600D3A6C4 /* Button+ConfigurableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Button+ConfigurableView.swift"; sourceTree = "<group>"; };
 		C7D3473C2AB9DA7600D3A6C4 /* Label+ConfigurableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Label+ConfigurableView.swift"; sourceTree = "<group>"; };
@@ -165,8 +158,9 @@
 		C7D347422AB9DA7600D3A6C4 /* UILabel+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Extensions.swift"; sourceTree = "<group>"; };
 		C7D347432AB9DA7600D3A6C4 /* CGRect+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+Extensions.swift"; sourceTree = "<group>"; };
 		C7D347442AB9DA7600D3A6C4 /* Double+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
-		D396222D5F7732DD70B829ED /* Pods-Duxer_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Duxer_Tests.debug.xcconfig"; path = "Target Support Files/Pods-Duxer_Tests/Pods-Duxer_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		FD705E5E261AFEE441212810 /* Pods_Duxer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Duxer_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD9656350EA73E0A4ADA409A /* Pods-Duxer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Duxer_Example.debug.xcconfig"; path = "Target Support Files/Pods-Duxer_Example/Pods-Duxer_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		F5D15CB8794721428CCC72F2 /* Pods_Duxer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Duxer_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA6B887ABAD6001079C0C676 /* Pods_Duxer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Duxer_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,7 +168,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96006615A396E488B94A1C36 /* Pods_Duxer_Example.framework in Frameworks */,
+				4ED89D2D8A83F11BC99F3593 /* Pods_Duxer_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,7 +176,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4636A77849B1F23C3BBA0757 /* Pods_Duxer_Tests.framework in Frameworks */,
+				E03F841F30F174F69ED8E86F /* Pods_Duxer_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +191,7 @@
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				D3E481326C4A897E2B885F32 /* Pods */,
-				6D984E230D2029E58D93B134 /* Frameworks */,
+				E8E9E9FCDC43EBA321FB0243 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -260,15 +254,6 @@
 				31BEB4761246D6CE83A08B47 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
-			sourceTree = "<group>";
-		};
-		6D984E230D2029E58D93B134 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				87C479DDB431E8B02AE7E806 /* Pods_Duxer_Example.framework */,
-				FD705E5E261AFEE441212810 /* Pods_Duxer_Tests.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		C7D346F22AB9DA4200D3A6C4 /* State */ = {
@@ -400,9 +385,7 @@
 			isa = PBXGroup;
 			children = (
 				C7D3472D2AB9DA7600D3A6C4 /* Image.swift */,
-				C7D3472E2AB9DA7600D3A6C4 /* WrapperCell.swift */,
 				C7D3472F2AB9DA7600D3A6C4 /* TextContent.swift */,
-				C7D347302AB9DA7600D3A6C4 /* Buildable.swift */,
 				C7D347312AB9DA7600D3A6C4 /* StringFormatter.swift */,
 				C7D347322AB9DA7600D3A6C4 /* Color.swift */,
 				C7D347332AB9DA7600D3A6C4 /* StringFormatters.swift */,
@@ -416,7 +399,6 @@
 				C7D347352AB9DA7600D3A6C4 /* UIView+Extensions.swift */,
 				C7D347362AB9DA7600D3A6C4 /* String+Extensions.swift */,
 				C7D347372AB9DA7600D3A6C4 /* NSAttributedString+Extensions.swift */,
-				C7D347382AB9DA7600D3A6C4 /* UITableView+Extensions.swift */,
 				C7D347392AB9DA7600D3A6C4 /* Optional+Extensions.swift */,
 				C7D3473A2AB9DA7600D3A6C4 /* ConfigurableViews */,
 				C7D347422AB9DA7600D3A6C4 /* UILabel+Extensions.swift */,
@@ -443,12 +425,21 @@
 		D3E481326C4A897E2B885F32 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2E6F1B4186C487BA056EBCA7 /* Pods-Duxer_Example.debug.xcconfig */,
-				1B6E24D01C5A21513081465B /* Pods-Duxer_Example.release.xcconfig */,
-				D396222D5F7732DD70B829ED /* Pods-Duxer_Tests.debug.xcconfig */,
-				8370E4FCB8C24EFE02356611 /* Pods-Duxer_Tests.release.xcconfig */,
+				DD9656350EA73E0A4ADA409A /* Pods-Duxer_Example.debug.xcconfig */,
+				A5AC6E6965B5E09D02A3F01E /* Pods-Duxer_Example.release.xcconfig */,
+				20E2DF20BDDBFC017383DC77 /* Pods-Duxer_Tests.debug.xcconfig */,
+				1A5D1060AD34F45307F0ACA4 /* Pods-Duxer_Tests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		E8E9E9FCDC43EBA321FB0243 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA6B887ABAD6001079C0C676 /* Pods_Duxer_Example.framework */,
+				F5D15CB8794721428CCC72F2 /* Pods_Duxer_Tests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -458,11 +449,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "Duxer_Example" */;
 			buildPhases = (
-				AF256D0CB7604F58384B509A /* [CP] Check Pods Manifest.lock */,
+				55D652A052185748346D08A3 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				8EA6D0F9F2A2B47C8B4C7D0F /* [CP] Embed Pods Frameworks */,
+				946267D5BEB9661A4579E610 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -477,11 +468,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "Duxer_Tests" */;
 			buildPhases = (
-				C578C3538E377AF55663CE20 /* [CP] Check Pods Manifest.lock */,
+				93978363629539191B7035B5 /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				922D2E5500BCA68C1E0CC50A /* [CP] Embed Pods Frameworks */,
+				CD6137799C40DB0FA60FFE1C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -554,45 +545,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		8EA6D0F9F2A2B47C8B4C7D0F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Duxer_Example/Pods-Duxer_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Duxer/Duxer.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Duxer.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Duxer_Example/Pods-Duxer_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		922D2E5500BCA68C1E0CC50A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Duxer_Tests/Pods-Duxer_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
-				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Duxer_Tests/Pods-Duxer_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AF256D0CB7604F58384B509A /* [CP] Check Pods Manifest.lock */ = {
+		55D652A052185748346D08A3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -614,7 +567,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C578C3538E377AF55663CE20 /* [CP] Check Pods Manifest.lock */ = {
+		93978363629539191B7035B5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -636,6 +589,48 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		946267D5BEB9661A4579E610 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Duxer_Example/Pods-Duxer_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Duxer/Duxer.framework",
+				"${BUILT_PRODUCTS_DIR}/Swild/Swild.framework",
+				"${BUILT_PRODUCTS_DIR}/WrapperCell/WrapperCell.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Duxer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swild.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WrapperCell.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Duxer_Example/Pods-Duxer_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD6137799C40DB0FA60FFE1C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Duxer_Tests/Pods-Duxer_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Duxer_Tests/Pods-Duxer_Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -653,7 +648,6 @@
 				C7D3476C2AB9DA7600D3A6C4 /* Color.swift in Sources */,
 				C7D347762AB9DA7600D3A6C4 /* UIPickerView+ConfigurableView.swift in Sources */,
 				C7D347662AB9DA7600D3A6C4 /* TransferViewController+UITableViewDelegate.swift in Sources */,
-				C7D3476A2AB9DA7600D3A6C4 /* Buildable.swift in Sources */,
 				C7D347552AB9DA7600D3A6C4 /* OrderCardViewController+UITextFieldDelegate.swift in Sources */,
 				C7D347612AB9DA7600D3A6C4 /* CardDetailModels.swift in Sources */,
 				C7D346FD2AB9DA5600D3A6C4 /* Reducers.swift in Sources */,
@@ -687,11 +681,9 @@
 				C7D347572AB9DA7600D3A6C4 /* TransferCardSelectionViewController+UITableViewDataSource.swift in Sources */,
 				C7D3474F2AB9DA7600D3A6C4 /* RegistrationModels.swift in Sources */,
 				C7D346FC2AB9DA5600D3A6C4 /* Middlewares.swift in Sources */,
-				C7D347712AB9DA7600D3A6C4 /* UITableView+Extensions.swift in Sources */,
 				C7D3475B2AB9DA7600D3A6C4 /* AddCardViewController.swift in Sources */,
 				C7D3474E2AB9DA7600D3A6C4 /* ViewController.swift in Sources */,
 				C7D3477B2AB9DA7600D3A6C4 /* CGRect+Extensions.swift in Sources */,
-				C7D347682AB9DA7600D3A6C4 /* WrapperCell.swift in Sources */,
 				C7D347622AB9DA7600D3A6C4 /* TransferViewController.swift in Sources */,
 				C7D347702AB9DA7600D3A6C4 /* NSAttributedString+Extensions.swift in Sources */,
 				C7D347722AB9DA7600D3A6C4 /* Optional+Extensions.swift in Sources */,
@@ -840,7 +832,7 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E6F1B4186C487BA056EBCA7 /* Pods-Duxer_Example.debug.xcconfig */;
+			baseConfigurationReference = DD9656350EA73E0A4ADA409A /* Pods-Duxer_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Duxer/Info.plist;
@@ -856,7 +848,7 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1B6E24D01C5A21513081465B /* Pods-Duxer_Example.release.xcconfig */;
+			baseConfigurationReference = A5AC6E6965B5E09D02A3F01E /* Pods-Duxer_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Duxer/Info.plist;
@@ -872,7 +864,7 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D396222D5F7732DD70B829ED /* Pods-Duxer_Tests.debug.xcconfig */;
+			baseConfigurationReference = 20E2DF20BDDBFC017383DC77 /* Pods-Duxer_Tests.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -894,7 +886,7 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8370E4FCB8C24EFE02356611 /* Pods-Duxer_Tests.release.xcconfig */;
+			baseConfigurationReference = 1A5D1060AD34F45307F0ACA4 /* Pods-Duxer_Tests.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
