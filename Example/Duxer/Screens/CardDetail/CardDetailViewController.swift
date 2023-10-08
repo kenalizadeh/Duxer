@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class CardDetailViewController: ViewController<DXAppState> {
+final class CardDetailViewController: ViewController<AppState> {
 
     lazy var tableView: UITableView = .build(self.buildTableView)
 
@@ -19,15 +19,13 @@ final class CardDetailViewController: ViewController<DXAppState> {
 
     var card: Card
 
-    override var stateProjector: StateProjector? { AppStateProjector }
-
-    @available(*, unavailable)
     required init?(coder: NSCoder) { fatalError("init(coder:) has not been implemented") }
 
     init(card: Card) {
         self.card = card
 
         super.init(nibName: nil, bundle: nil)
+        self.setupStateSubscription(projector: AppStateProjector)
     }
 
     override func viewDidLoad() {
@@ -37,7 +35,7 @@ final class CardDetailViewController: ViewController<DXAppState> {
         _ = self.tableView
     }
 
-    override func render(state: DXAppState) {
+    override func render(state: AppState) {
 
         if let card = state.card.cards.first(where: { $0.id == self.card.id }) {
             self.card = card
@@ -78,7 +76,7 @@ private extension CardDetailViewController {
     @objc
     func removeCardButtonAction() {
 
-        self.store.dispatch(DXAction.card(.delete(self.card)))
+        self.store.dispatch(CardAction.delete(self.card))
         self.navigationController?.popViewController(animated: true)
     }
 }

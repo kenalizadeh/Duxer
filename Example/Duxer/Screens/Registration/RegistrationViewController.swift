@@ -6,8 +6,9 @@
 //
 
 import UIKit
+import Duxer
 
-final class RegistrationViewController: ViewController<DXUserState> {
+final class RegistrationViewController: ViewController<UserState> {
 
     lazy var tableView: UITableView = .build(self.buildTableView)
     lazy var continueButton: Button = .build(self.buildContinuteButton)
@@ -22,10 +23,9 @@ final class RegistrationViewController: ViewController<DXUserState> {
         }
     }
 
-    override var stateProjector: StateProjector? { UserStateProjector }
-
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setupStateSubscription(projector: UserStateProjector)
 
         _ = [
             self.tableView,
@@ -35,12 +35,9 @@ final class RegistrationViewController: ViewController<DXUserState> {
         self.view.addGestureRecognizer(self.tapGestureRecognizer)
     }
 
-    override func render(state: DXUserState) {
+    override func render(state: UserState) {
 
         guard state.userData.isNotNil
-        else { return }
-
-        guard case .some = state.userData
         else { return }
 
         self.navigationController?.setViewControllers([HomeViewController()], animated: true)
@@ -104,7 +101,7 @@ private extension RegistrationViewController {
         guard let userData = self.formData.userData
         else { return }
 
-        AppDelegate.shared.store.dispatch(DXAction.user(.register(userData)))
+        AppDelegate.shared.store.dispatch(UserAction.register(userData))
     }
 
     @objc

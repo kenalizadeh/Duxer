@@ -13,11 +13,11 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		C7D346FA2AB9DA5600D3A6C4 /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D346F42AB9DA5600D3A6C4 /* Actions.swift */; };
-		C7D346FB2AB9DA5600D3A6C4 /* DXAppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D346F52AB9DA5600D3A6C4 /* DXAppState.swift */; };
+		C7D346FB2AB9DA5600D3A6C4 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D346F52AB9DA5600D3A6C4 /* AppState.swift */; };
 		C7D346FC2AB9DA5600D3A6C4 /* Middlewares.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D346F62AB9DA5600D3A6C4 /* Middlewares.swift */; };
 		C7D346FD2AB9DA5600D3A6C4 /* Reducers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D346F72AB9DA5600D3A6C4 /* Reducers.swift */; };
 		C7D346FE2AB9DA5600D3A6C4 /* Thunks.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D346F82AB9DA5600D3A6C4 /* Thunks.swift */; };
-		C7D346FF2AB9DA5600D3A6C4 /* DXStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D346F92AB9DA5600D3A6C4 /* DXStore.swift */; };
+		C7D346FF2AB9DA5600D3A6C4 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D346F92AB9DA5600D3A6C4 /* Store.swift */; };
 		C7D347452AB9DA7600D3A6C4 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D347012AB9DA7600D3A6C4 /* CardView.swift */; };
 		C7D347462AB9DA7600D3A6C4 /* C2CTransferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D347022AB9DA7600D3A6C4 /* C2CTransferView.swift */; };
 		C7D347472AB9DA7600D3A6C4 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D347042AB9DA7600D3A6C4 /* Label.swift */; };
@@ -100,11 +100,11 @@
 		A5AC6E6965B5E09D02A3F01E /* Pods-Duxer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Duxer_Example.release.xcconfig"; path = "Target Support Files/Pods-Duxer_Example/Pods-Duxer_Example.release.xcconfig"; sourceTree = "<group>"; };
 		AF1342118C15F43FEC8965D2 /* Duxer.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Duxer.podspec; path = ../Duxer.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C7D346F42AB9DA5600D3A6C4 /* Actions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
-		C7D346F52AB9DA5600D3A6C4 /* DXAppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DXAppState.swift; sourceTree = "<group>"; };
+		C7D346F52AB9DA5600D3A6C4 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		C7D346F62AB9DA5600D3A6C4 /* Middlewares.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Middlewares.swift; sourceTree = "<group>"; };
 		C7D346F72AB9DA5600D3A6C4 /* Reducers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reducers.swift; sourceTree = "<group>"; };
 		C7D346F82AB9DA5600D3A6C4 /* Thunks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Thunks.swift; sourceTree = "<group>"; };
-		C7D346F92AB9DA5600D3A6C4 /* DXStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DXStore.swift; sourceTree = "<group>"; };
+		C7D346F92AB9DA5600D3A6C4 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		C7D347012AB9DA7600D3A6C4 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		C7D347022AB9DA7600D3A6C4 /* C2CTransferView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = C2CTransferView.swift; sourceTree = "<group>"; };
 		C7D347042AB9DA7600D3A6C4 /* Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
@@ -260,8 +260,8 @@
 			isa = PBXGroup;
 			children = (
 				C7D346F42AB9DA5600D3A6C4 /* Actions.swift */,
-				C7D346F52AB9DA5600D3A6C4 /* DXAppState.swift */,
-				C7D346F92AB9DA5600D3A6C4 /* DXStore.swift */,
+				C7D346F52AB9DA5600D3A6C4 /* AppState.swift */,
+				C7D346F92AB9DA5600D3A6C4 /* Store.swift */,
 				C7D346F62AB9DA5600D3A6C4 /* Middlewares.swift */,
 				C7D346F72AB9DA5600D3A6C4 /* Reducers.swift */,
 				C7D346F82AB9DA5600D3A6C4 /* Thunks.swift */,
@@ -292,8 +292,8 @@
 		C7D347072AB9DA7600D3A6C4 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				C7D347082AB9DA7600D3A6C4 /* Home */,
 				C7D3470D2AB9DA7600D3A6C4 /* ViewController.swift */,
+				C7D347082AB9DA7600D3A6C4 /* Home */,
 				C7D3470E2AB9DA7600D3A6C4 /* Registration */,
 				C7D347132AB9DA7600D3A6C4 /* OrderCard */,
 				C7D347182AB9DA7600D3A6C4 /* TransferCardSelectionViewController */,
@@ -688,8 +688,8 @@
 				C7D347702AB9DA7600D3A6C4 /* NSAttributedString+Extensions.swift in Sources */,
 				C7D347722AB9DA7600D3A6C4 /* Optional+Extensions.swift in Sources */,
 				C7D3475C2AB9DA7600D3A6C4 /* AddCardViewController+UITextFieldDelegate.swift in Sources */,
-				C7D346FB2AB9DA5600D3A6C4 /* DXAppState.swift in Sources */,
-				C7D346FF2AB9DA5600D3A6C4 /* DXStore.swift in Sources */,
+				C7D346FB2AB9DA5600D3A6C4 /* AppState.swift in Sources */,
+				C7D346FF2AB9DA5600D3A6C4 /* Store.swift in Sources */,
 				C7D347492AB9DA7600D3A6C4 /* Button.swift in Sources */,
 				C7D347772AB9DA7600D3A6C4 /* UIDatePicker+ConfigurableView.swift in Sources */,
 				C7D3476F2AB9DA7600D3A6C4 /* String+Extensions.swift in Sources */,

@@ -14,7 +14,7 @@ extension TransferCardSelectionViewController: UITableViewDelegate {
         let card = self.tableData[indexPath.row]
         self.transferForm.recipient = card
 
-        self.store.dispatch(DXAction.transfer(.pendingTransferFormUpdate(self.transferForm)))
+        self.store.dispatch(TransferAction.pendingTransferFormUpdate(self.transferForm))
         self.navigationController?.popViewController(animated: true)
     }
 }

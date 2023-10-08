@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeViewController: ViewController<DXAppState> {
+class HomeViewController: ViewController<AppState> {
 
     lazy var tableView: UITableView = .build(self.buildTableView)
 
@@ -17,10 +17,9 @@ class HomeViewController: ViewController<DXAppState> {
         }
     }
 
-    override var stateProjector: StateProjector? { AppStateProjector }
-
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setupStateSubscription(projector: AppStateProjector)
 
         _ = self.tableView
         self.title = "Home"
@@ -30,7 +29,7 @@ class HomeViewController: ViewController<DXAppState> {
         self.navigationItem.setRightBarButtonItems([addCardItem], animated: true)
     }
 
-    override func render(state: DXAppState) {
+    override func render(state: AppState) {
 
         let userNameItem: HomeViewItem = .text(
             .init(

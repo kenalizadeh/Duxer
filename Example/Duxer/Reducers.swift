@@ -7,21 +7,17 @@
 
 import Duxer
 
-let rootReducer: Reducer<DXAppState> = { state, action in
-    DXAppState(
+let rootReducer: DXReducer<AppState> = { state, action in
+    AppState(
         user: userReducer(state.user, action),
         card: cardReducer(state.card, action),
         transaction: transactionReducer(state.transaction, action)
     )
 }
 
-let userReducer: Reducer<DXUserState> = { state, action in
+let userReducer: DXReducer<UserState> = { state, action in
 
-    if case let DXAction.print(text) = action {
-        print(Date(), text)
-    }
-
-    guard case let DXAction.user(action) = action else { return state }
+    guard let action = action as? UserAction else { return state }
 
     var state = state
 
@@ -33,9 +29,9 @@ let userReducer: Reducer<DXUserState> = { state, action in
     return state
 }
 
-let cardReducer: Reducer<DXCardState> = { state, action in
+let cardReducer: DXReducer<CardState> = { state, action in
 
-    guard case let DXAction.card(action) = action else { return state }
+    guard let action = action as? CardAction else { return state }
 
     var state = state
 
@@ -56,9 +52,9 @@ let cardReducer: Reducer<DXCardState> = { state, action in
     return state
 }
 
-let transactionReducer: Reducer<DXTransactionState> = { state, action in
+let transactionReducer: DXReducer<TransactionState> = { state, action in
 
-    guard case let DXAction.transfer(action) = action else { return state }
+    guard let action = action as? TransferAction else { return state }
 
     var state = state
 

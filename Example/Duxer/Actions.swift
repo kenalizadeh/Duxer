@@ -7,24 +7,17 @@
 
 import Duxer
 
-enum DXAction: Action {
-    case user(DXUserAction)
-    case card(DXCardAction)
-    case transfer(DXTransferAction)
-    case print(String)
-}
-
-enum DXUserAction: Action {
+enum UserAction: DXAction {
     case register(UserData)
 }
 
-enum DXCardAction: Action {
+enum CardAction: DXAction {
     case create(Card)
     case delete(Card)
     case updateCardBalance(cardID: String, balance: Double)
 }
 
-enum DXTransferAction: Action {
+enum TransferAction: DXAction {
     case pendingTransferFormUpdate(TransferForm)
     case transfer(C2CTransfer)
     case error(DXTransactionError)

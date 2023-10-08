@@ -16,7 +16,7 @@ extension CardDetailViewController: UITableViewDelegate {
         switch item {
         case .button:
 
-            self.store.dispatch(DXAction.transfer(.pendingTransferFormUpdate(.init(sender: self.card))))
+            self.store.dispatch(TransferAction.pendingTransferFormUpdate(.init(sender: self.card)))
             self.navigationController?.pushViewController(TransferViewController(card: self.card), animated: true)
 
         default: break

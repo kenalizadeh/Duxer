@@ -8,19 +8,19 @@
 import Combine
 import Duxer
 
-func transactionThunk(data: C2CTransfer) -> Thunk<DXAppState> {
+func transactionThunk(data: C2CTransfer) -> DXThunk<AppState> {
     .init { dispatch, state in
         let delay: TimeInterval = .random(in: 0.2 ... 2)
 
         DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
 
             if data.sender.balance > data.amount {
-                dispatch(DXAction.card(.updateCardBalance(cardID: data.sender.id, balance: data.sender.balance - data.amount)))
-                dispatch(DXAction.card(.updateCardBalance(cardID: data.recipient.id, balance: data.recipient.balance + data.amount)))
-                dispatch(DXAction.transfer(.transfer(data)))
-                dispatch(DXAction.transfer(.reset))
+                dispatch(CardAction.updateCardBalance(cardID: data.sender.id, balance: data.sender.balance - data.amount))
+                dispatch(CardAction.updateCardBalance(cardID: data.recipient.id, balance: data.recipient.balance + data.amount))
+                dispatch(TransferAction.transfer(data))
+                dispatch(TransferAction.reset)
             } else {
-                dispatch(DXAction.transfer(.error(DXTransactionError.insufficientAmount)))
+                dispatch(TransferAction.error(DXTransactionError.insufficientAmount))
             }
         }
     }

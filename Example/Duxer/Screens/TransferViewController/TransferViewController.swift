@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class TransferViewController: ViewController<DXTransactionState> {
+final class TransferViewController: ViewController<TransactionState> {
 
     private lazy var tableView: UITableView = .build(self.buildTableView)
     private lazy var continueButton: Button = .build(self.buildContinuteButton)
@@ -26,9 +26,6 @@ final class TransferViewController: ViewController<DXTransactionState> {
         }
     }
 
-    override var stateProjector: StateProjector? { TransactionStateProjector }
-
-    @available(*, unavailable)
     required init?(coder: NSCoder) { fatalError("init(coder:) has not been implemented") }
 
     init(card: Card) {
@@ -36,6 +33,7 @@ final class TransferViewController: ViewController<DXTransactionState> {
         self.transferForm = TransferForm(sender: card)
 
         super.init(nibName: nil, bundle: nil)
+        self.setupStateSubscription(projector: TransactionStateProjector)
     }
 
     override func viewDidLoad() {
@@ -47,7 +45,7 @@ final class TransferViewController: ViewController<DXTransactionState> {
         ]
     }
 
-    override func render(state: DXTransactionState) {
+    override func render(state: TransactionState) {
 
         self.transferForm.recipient = state.pendingTransfer?.recipient
         self.tableData = makeTableData(form: self.transferForm)
@@ -107,7 +105,7 @@ private extension TransferViewController {
 
     @objc
     func continueButtonActionHandler() {
-        self.store.dispatch(DXAction.transfer(.pendingTransferFormUpdate(self.transferForm)))
+        self.store.dispatch(TransferAction.pendingTransferFormUpdate(self.transferForm))
 
         guard let transferData = self.transferForm.transferData
         else { return }

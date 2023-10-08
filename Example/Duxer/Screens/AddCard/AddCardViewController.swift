@@ -6,8 +6,9 @@
 //
 
 import UIKit
+import Duxer
 
-final class AddCardViewController: ViewController<DXCardState> {
+final class AddCardViewController: ViewController<CardState> {
 
     private lazy var tableView: UITableView = .build(self.buildTableView)
     private lazy var continueButton: Button = .build(self.buildContinuteButton)
@@ -22,10 +23,9 @@ final class AddCardViewController: ViewController<DXCardState> {
         }
     }
 
-    override var stateProjector: StateProjector? { CardStateProjector }
-
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setupStateSubscription(projector: CardStateProjector)
 
         self.title = "Add Other Bank Card"
 
@@ -37,7 +37,7 @@ final class AddCardViewController: ViewController<DXCardState> {
         self.formData.id = self.cardID
     }
 
-    override func render(state: DXCardState) {
+    override func render(state: CardState) {
 
         guard let card = self.formData.card,
               state.cards.contains(where: { $0.id == card.id })
@@ -99,7 +99,7 @@ private extension AddCardViewController {
         guard let card = self.formData.card
         else { return }
 
-        self.store.dispatch(DXAction.card(.create(card)))
+        self.store.dispatch(CardAction.create(card))
     }
 }
 

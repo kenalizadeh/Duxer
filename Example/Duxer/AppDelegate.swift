@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     public private(set) var store = DXStore(
-        initial: DXAppState(),
+        initial: AppState(),
         reducer: rootReducer,
         middlewares: [
             loggerMiddleware,
