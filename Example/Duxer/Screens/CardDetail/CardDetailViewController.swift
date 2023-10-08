@@ -25,7 +25,6 @@ final class CardDetailViewController: ViewController<AppState> {
         self.card = card
 
         super.init(nibName: nil, bundle: nil)
-        self.setupStateSubscription(projector: AppStateProjector)
     }
 
     override func viewDidLoad() {

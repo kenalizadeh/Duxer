@@ -25,7 +25,6 @@ final class RegistrationViewController: ViewController<UserState> {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setupStateSubscription(projector: UserStateProjector)
 
         _ = [
             self.tableView,

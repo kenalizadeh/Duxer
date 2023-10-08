@@ -25,7 +25,6 @@ final class AddCardViewController: ViewController<CardState> {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setupStateSubscription(projector: CardStateProjector)
 
         self.title = "Add Other Bank Card"
 

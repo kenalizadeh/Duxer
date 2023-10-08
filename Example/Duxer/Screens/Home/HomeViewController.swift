@@ -19,7 +19,6 @@ class HomeViewController: ViewController<AppState> {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setupStateSubscription(projector: AppStateProjector)
 
         _ = self.tableView
         self.title = "Home"

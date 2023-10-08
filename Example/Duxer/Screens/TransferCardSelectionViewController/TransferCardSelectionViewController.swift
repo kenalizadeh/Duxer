@@ -22,7 +22,6 @@ final class TransferCardSelectionViewController: ViewController<CardState> {
         self.transferForm = transferForm
 
         super.init(nibName: nil, bundle: nil)
-        self.setupStateSubscription(projector: CardStateProjector)
     }
 
     override func viewDidLoad() {

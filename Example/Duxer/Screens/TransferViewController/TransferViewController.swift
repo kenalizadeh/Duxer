@@ -33,7 +33,6 @@ final class TransferViewController: ViewController<TransactionState> {
         self.transferForm = TransferForm(sender: card)
 
         super.init(nibName: nil, bundle: nil)
-        self.setupStateSubscription(projector: TransactionStateProjector)
     }
 
     override func viewDidLoad() {

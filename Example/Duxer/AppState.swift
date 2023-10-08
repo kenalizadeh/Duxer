@@ -8,13 +8,33 @@
 import Foundation
 import Duxer
 
-struct AppState: Equatable {
+protocol State: DXState {
+    static func projection(from state: AppState) -> Self
+}
+
+extension State where Self == AppState {
+    static func projection(from state: AppState) -> Self { state }
+}
+
+extension State where Self == UserState {
+    static func projection(from state: AppState) -> Self { state.user }
+}
+
+extension State where Self == CardState {
+    static func projection(from state: AppState) -> Self { state.card }
+}
+
+extension State where Self == TransactionState {
+    static func projection(from state: AppState) -> Self { state.transaction }
+}
+
+struct AppState: State {
     var user: UserState = .init()
     var card: CardState = .init()
     var transaction: TransactionState = .init()
 }
 
-struct UserState: Equatable {
+struct UserState: State {
     var userData: UserData?
 
     var isLoggedIn: Bool {
@@ -22,23 +42,13 @@ struct UserState: Equatable {
     }
 }
 
-struct CardState: Equatable {
+struct CardState: State {
     var cards: [Card] = []
 }
 
-struct TransactionState: Equatable {
+struct TransactionState: State {
     var transactions: [C2CTransfer] = []
     var pendingTransfer: TransferForm?
     var error: DXTransactionError?
     var transferSuccess: Bool = false
 }
-
-// Projectors
-
-let AppStateProjector: DXStateProjector<AppState, AppState> = { $0 }
-
-let UserStateProjector: DXStateProjector<AppState, UserState> = (\.user)
-
-let CardStateProjector: DXStateProjector<AppState, CardState> = (\.card)
-
-let TransactionStateProjector: DXStateProjector<AppState, TransactionState> = (\.transaction)
