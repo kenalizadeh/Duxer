@@ -2,7 +2,7 @@
 //  RegistrationViewController.swift
 //  DuxerExample
 //
-//  Created by Kenan Alizadeh on 21.04.23.
+//  Created by Kenan Alizadeh
 //
 
 import UIKit

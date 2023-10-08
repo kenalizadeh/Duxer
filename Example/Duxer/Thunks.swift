@@ -2,7 +2,7 @@
 //  Thunks.swift
 //  DuxerExample
 //
-//  Created by Kenan Alizadeh on 24.04.23.
+//  Created by Kenan Alizadeh
 //
 
 import Combine

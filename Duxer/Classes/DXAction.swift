@@ -2,7 +2,7 @@
 //  DXAction.swift
 //  Duxer
 //
-//  Created by Kenan Alizadeh on 11.09.22.
+//  Created by Kenan Alizadeh
 //
 
 import Foundation

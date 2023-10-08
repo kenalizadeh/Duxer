@@ -2,7 +2,7 @@
 //  DXViewModel.swift
 //  Duxer
 //
-//  Created by Kenan Alizadeh on 08.10.23.
+//  Created by Kenan Alizadeh
 //
 
 import Foundation

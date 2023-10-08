@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Duxer
 //
-//  Created by Kenan Alizadeh on 09/19/2023.
+//  Created by Kenan Alizadeh
 //
 
 import UIKit

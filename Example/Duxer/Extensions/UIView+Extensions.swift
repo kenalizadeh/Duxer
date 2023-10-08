@@ -2,7 +2,7 @@
 //  UIView+Extensions.swift
 //  DuxerExample
 //
-//  Created by Kenan Alizadeh on 22.04.23.
+//  Created by Kenan Alizadeh
 //
 
 import UIKit
