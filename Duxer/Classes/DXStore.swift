@@ -45,7 +45,8 @@ public class DXStore<State: DXState>: ObservableObject {
     private func _setupActionSubscription() {
         self._middlewares.reduce(self._actionSubject.eraseToAnyPublisher()) { partialResult, middleware in
             partialResult
-                .flatMap { middleware(self.dispatch, self.state, $0) }
+                .compactMap { middleware(self.dispatch, self.state, $0) }
+                .flatMap { Just($0).eraseToAnyPublisher() }
                 .eraseToAnyPublisher()
         }
         .receive(on: DispatchQueue.main)
