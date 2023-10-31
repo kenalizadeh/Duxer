@@ -9,7 +9,7 @@ import Combine
 import Duxer
 
 func transactionThunk(data: C2CTransfer) -> DXThunk<AppState> {
-    .init { dispatch, state in
+    .init(identifier: #function) { dispatch, state in
         let delay: TimeInterval = .random(in: 0.2 ... 2)
 
         DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
