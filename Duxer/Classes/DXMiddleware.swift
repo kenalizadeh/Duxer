@@ -8,12 +8,14 @@
 import Foundation
 import Combine
 
-public typealias DXMiddleware<State: DXState> = (@escaping DXActionDispatch, State, DXAction) -> DXAction?
+public typealias StateProvider<State> = () -> State
+
+public typealias DXMiddleware<State: DXState> = (@escaping DXActionDispatch, StateProvider<State>, DXAction) -> DXAction?
 
 public func createThunkMiddleware<State: DXState>() -> DXMiddleware<State> {
-    { dispatch, state, action in
+    { dispatch, getState, action in
         if let action = action as? DXThunk<State> {
-            action.body(dispatch, state)
+            action.body(dispatch, getState())
             return nil
         }
 

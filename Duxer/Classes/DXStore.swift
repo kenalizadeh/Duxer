@@ -11,7 +11,6 @@ import Combine
 public class DXStore<State: DXState>: ObservableObject {
     private let _reducer: DXReducer<State>
     private let _middlewares: [DXMiddleware<State>]
-    private let _queue = DispatchQueue(label: "Store.Queue", qos: .userInitiated)
     private var _subscriptions: Set<AnyCancellable> = []
     private let _actionSubject: PassthroughSubject<DXAction, Never> = .init()
 
@@ -31,26 +30,25 @@ public class DXStore<State: DXState>: ObservableObject {
     }
 
     public func dispatch(_ action: DXAction) {
-        self._queue.async {
-            self._actionSubject.send(action)
-        }
+        self._actionSubject.send(action)
     }
 
-    private func _dispatch(_ action: DXAction) {
-        let newState = self._reducer(state, action)
+    private func _reduce(_ action: DXAction) {
+        self.state = self._reducer(state, action)
+    }
 
-        self.state = newState
+    private func getState() -> State {
+        self.state
     }
 
     private func _setupActionSubscription() {
         self._middlewares.reduce(self._actionSubject.eraseToAnyPublisher()) { partialResult, middleware in
             partialResult
-                .compactMap { middleware(self.dispatch, self.state, $0) }
+                .compactMap { middleware(self.dispatch, self.getState, $0) }
                 .flatMap { Just($0).eraseToAnyPublisher() }
                 .eraseToAnyPublisher()
         }
-        .receive(on: DispatchQueue.main)
-        .sink(receiveValue: self._dispatch)
+        .sink(receiveValue: self._reduce)
         .store(in: &self._subscriptions)
     }
 
