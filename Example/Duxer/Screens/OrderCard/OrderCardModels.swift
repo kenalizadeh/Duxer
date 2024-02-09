@@ -50,6 +50,6 @@ struct OrderCardForm {
 
 enum OrderCardViewItem {
     case text(content: TextContent)
-    case input(type: AddCardViewInputItem, item: TextField.Item)
+    case input(type: LinkCardViewInputItem, item: TextField.Item)
     case options([Currency])
 }

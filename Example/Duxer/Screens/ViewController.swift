@@ -19,6 +19,10 @@ class ViewController<VState: State>: DXVC<VState> {
         self.setupStateSubscription(projector: VState.projection(from:))
     }
 
+    func dispatch(_ action: DXAction) {
+        self.store.dispatch(action)
+    }
+
     func setupStateSubscription(projector: @escaping (AppState) -> VState) {
 
         super.setupStateSubscription(store: self.store, projector: projector)

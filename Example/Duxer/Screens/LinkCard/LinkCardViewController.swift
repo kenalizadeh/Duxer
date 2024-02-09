@@ -1,5 +1,5 @@
 //
-//  RegistrationViewController.swift
+//  LinkCardViewController.swift
 //  DuxerExample
 //
 //  Created by Kenan Alizadeh
@@ -8,16 +8,16 @@
 import UIKit
 import Duxer
 
-final class RegistrationViewController: ViewController<UserState> {
+final class LinkCardViewController: ViewController<CardState> {
 
-    lazy var tableView: UITableView = .build(self.buildTableView)
-    lazy var continueButton: Button = .build(self.buildContinuteButton)
+    private lazy var tableView: UITableView = .build(self.buildTableView)
+    private lazy var continueButton: Button = .build(self.buildContinuteButton)
 
-    lazy var tapGestureRecognizer: UITapGestureRecognizer = .init(target: self, action: #selector(self.endEditing))
+    private let cardID: String = UUID().uuidString
 
-    let tableData: [RegistrationViewItem] = makeTableData()
+    let tableData: [LinkCardViewItem] = makeTableData()
 
-    var formData = RegistrationForm(birthDate: Calendar.current.date(byAdding: .init(year: -18), to: .init())) {
+    var formData = LinkCardForm() {
         didSet {
             self.evaluateFormData()
         }
@@ -26,33 +26,38 @@ final class RegistrationViewController: ViewController<UserState> {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.title = "Add Other Bank Card"
+
         _ = [
             self.tableView,
             self.continueButton
         ]
 
-        self.view.addGestureRecognizer(self.tapGestureRecognizer)
+        self.formData.id = self.cardID
     }
 
-    @objc
-    func datePickerValueChanged(_ datePicker: UIDatePicker) {
+    override func render(state: CardState) {
 
-        self.formData.birthDate = datePicker.date
+        guard let card = self.formData.card,
+              state.cards.contains(where: { $0.id == card.id })
+        else { return }
+
+        self.navigationController?.popToRootViewController(animated: true)
     }
 }
 
-private extension RegistrationViewController {
+private extension LinkCardViewController {
 
     func buildTableView(_ v: inout UITableView) {
         v.translatesAutoresizingMaskIntoConstraints = false
         v.rowHeight = UITableView.automaticDimension
         v.estimatedRowHeight = 60
-        v.register(LabelCell.self)
-        v.register(DatePickerCell.self)
-        v.register(TextFieldCell.self)
         v.separatorStyle = .none
+        v.register(LabelCell.self)
+        v.register(TextFieldCell.self)
+        v.register(SegmentCell.self)
         v.dataSource = self
-        v.contentInset.bottom = 90
+        v.contentInsetAdjustmentBehavior = .never
 
         self.view.addSubview(v)
         NSLayoutConstraint.activate([
@@ -89,33 +94,28 @@ private extension RegistrationViewController {
 
     @objc
     func continueButtonActionHandler() {
-        guard let userData = self.formData.userData
+
+        guard let card = self.formData.card
         else { return }
 
-        AppDelegate.shared.store.dispatch(registrationThunk(data: userData))
-    }
-
-    @objc
-    func endEditing() {
-
-        self.view.endEditing(true)
+        self.store.dispatch(CardAction.create(card))
     }
 }
 
-fileprivate func makeTableData() -> [RegistrationViewItem] {
+fileprivate func makeTableData() -> [LinkCardViewItem] {
     [
         .text(
             content: .init(
-                string: "Enter first name",
+                string: "Enter card name",
                 color: .darkGray,
                 font: .systemFont(ofSize: 15, weight: .bold)
             )
         ),
         .input(
-            type: .firstName,
+            type: .cardLabel,
             item: .init(
                 placeholder: .init(
-                    string: "John",
+                    string: "Visa Digital",
                     color: .lightGray,
                     font: .systemFont(ofSize: 13)
                 ),
@@ -129,39 +129,16 @@ fileprivate func makeTableData() -> [RegistrationViewItem] {
         ),
         .text(
             content: .init(
-                string: "Enter last name",
+                string: "Enter card number",
                 color: .darkGray,
                 font: .systemFont(ofSize: 15, weight: .bold)
             )
         ),
         .input(
-            type: .lastName,
+            type: .cardNumber,
             item: .init(
                 placeholder: .init(
-                    string: "Doe",
-                    color: .lightGray,
-                    font: .systemFont(ofSize: 13)
-                ),
-                borderColor: .darkGray,
-                cornerRadius: 8,
-                editingInsets: .init(top: 0, left: 8, bottom: 0, right: 0),
-                placeholderInsets: .init(top: 0, left: 8, bottom: 0, right: 0),
-                textInsets: .init(top: 0, left: 8, bottom: 0, right: 0),
-                keyboardType: .default
-            )
-        ),
-        .text(
-            content: .init(
-                string: "Enter phone number",
-                color: .darkGray,
-                font: .systemFont(ofSize: 15, weight: .bold)
-            )
-        ),
-        .input(
-            type: .phoneNumber,
-            item: .init(
-                placeholder: .init(
-                    string: "(+994) XX XXX XX XX",
+                    string: "XXXX XXXX XXXX XXXX",
                     color: .lightGray,
                     font: .systemFont(ofSize: 13)
                 ),
@@ -175,17 +152,48 @@ fileprivate func makeTableData() -> [RegistrationViewItem] {
         ),
         .text(
             content: .init(
-                string: "Must be at least 18 to continue",
+                string: "Enter expiration date",
                 color: .darkGray,
                 font: .systemFont(ofSize: 15, weight: .bold)
             )
         ),
-        .date(
+        .input(
+            type: .expirationDate,
             item: .init(
-                datePickerMode: .date,
-                date: Calendar.current.date(byAdding: .init(year: -18), to: .init()),
-                maximumDate: Calendar.current.date(byAdding: .init(year: -18), to: .init()),
-                horizontalAlignment: .leading
+                placeholder: .init(
+                    string: "MM/YY",
+                    color: .lightGray,
+                    font: .systemFont(ofSize: 13)
+                ),
+                borderColor: .darkGray,
+                cornerRadius: 8,
+                editingInsets: .init(top: 0, left: 8, bottom: 0, right: 0),
+                placeholderInsets: .init(top: 0, left: 8, bottom: 0, right: 0),
+                textInsets: .init(top: 0, left: 8, bottom: 0, right: 0),
+                keyboardType: .numberPad
+            )
+        ),
+        .text(
+            content: .init(
+                string: "Enter CVV",
+                color: .darkGray,
+                font: .systemFont(ofSize: 15, weight: .bold)
+            )
+        ),
+        .input(
+            type: .cvv,
+            item: .init(
+                placeholder: .init(
+                    string: "123",
+                    color: .lightGray,
+                    font: .systemFont(ofSize: 13)
+                ),
+                borderColor: .darkGray,
+                cornerRadius: 8,
+                editingInsets: .init(top: 0, left: 8, bottom: 0, right: 0),
+                placeholderInsets: .init(top: 0, left: 8, bottom: 0, right: 0),
+                textInsets: .init(top: 0, left: 8, bottom: 0, right: 0),
+                keyboardType: .numberPad
             )
         )
     ]

@@ -9,10 +9,30 @@ import Duxer
 
 let rootReducer: DXReducer<AppState> = { state, action in
     AppState(
+        navigation: navigationReducer(state, action).navigation,
         user: userReducer(state.user, action),
         card: cardReducer(state.card, action),
         transaction: transactionReducer(state.transaction, action)
     )
+}
+
+let navigationReducer: DXReducer<AppState> = { state, action in
+
+    guard let action = action as? NavigationAction else { return state }
+
+    var state = state
+
+    if action == .launch {
+        let navigationState: NavigationState = state.user.isLoggedIn
+        ? .home
+        : .registration
+
+        state.navigation = navigationState
+    } else {
+        state.navigation = action
+    }
+
+    return state
 }
 
 let userReducer: DXReducer<UserState> = { state, action in

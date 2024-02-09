@@ -23,3 +23,32 @@ enum TransferAction: DXAction {
     case error(DXTransactionError)
     case reset
 }
+
+enum NavigationAction: DXAction {
+    case launch
+    case registration
+    case home
+    case cardDetails(card: Card)
+    case cardOrder
+    case cardLink
+    case transfer(card: Card)
+}
+
+extension NavigationAction: Equatable {
+    static func == (lhs: NavigationAction, rhs: NavigationAction) -> Bool {
+        false
+//        switch (lhs, rhs) {
+//        case (.launch, .launch), (.home, .home), (.registration, .registration), (.cardOrder, .cardOrder), (.cardLink, .cardLink):
+//            return true
+//
+//        case let (.cardDetails(lCard), .cardDetails(rCard)):
+//            return lCard == rCard
+//
+//        case let (.transfer(lCard), .transfer(rCard)):
+//            return lCard == rCard
+//
+//        default:
+//            return false
+//        }
+    }
+}

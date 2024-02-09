@@ -16,6 +16,10 @@ extension State where Self == AppState {
     static func projection(from state: AppState) -> Self { state }
 }
 
+extension State where Self == NavigationState {
+    static func projection(from state: AppState) -> Self { state.navigation }
+}
+
 extension State where Self == UserState {
     static func projection(from state: AppState) -> Self { state.user }
 }
@@ -29,10 +33,15 @@ extension State where Self == TransactionState {
 }
 
 struct AppState: State {
+    var navigation: NavigationState = .launch
     var user: UserState = .init()
     var card: CardState = .init()
     var transaction: TransactionState = .init()
 }
+
+extension NavigationAction: State {}
+
+typealias NavigationState = NavigationAction
 
 struct UserState: State {
     var userData: UserData?

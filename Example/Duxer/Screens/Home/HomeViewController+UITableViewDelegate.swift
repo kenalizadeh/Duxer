@@ -15,10 +15,10 @@ extension HomeViewController: UITableViewDelegate {
 
         switch item {
         case let .card(card):
-            self.navigationController?.pushViewController(CardDetailViewController(card: card), animated: true)
+            self.dispatch(NavigationAction.cardDetails(card: card))
 
         case .createCard:
-            self.navigationController?.pushViewController(OrderCardViewController(), animated: true)
+            self.dispatch(NavigationAction.cardOrder)
 
         case .text, .transaction:
             break

@@ -24,7 +24,7 @@ class HomeViewController: ViewController<AppState> {
         self.title = "Home"
         self.navigationItem.titleView = UIView()
 
-        let addCardItem = UIBarButtonItem(title: "Add Other Card", style: .done, target: self, action: #selector(self.addOtherCardActionHandler))
+        let addCardItem = UIBarButtonItem(title: "Link Card", style: .done, target: self, action: #selector(self.addOtherCardActionHandler))
         self.navigationItem.setRightBarButtonItems([addCardItem], animated: true)
     }
 
@@ -93,7 +93,6 @@ private extension HomeViewController {
 
     @objc
     func addOtherCardActionHandler() {
-
-        self.navigationController?.pushViewController(AddCardViewController(), animated: true)
+        self.dispatch(NavigationAction.cardLink)
     }
 }

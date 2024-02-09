@@ -8,6 +8,18 @@
 import Combine
 import Duxer
 
+func registrationThunk(data: UserData) -> DXThunk<AppState> {
+    .init(identifier: #function) { dispatch, state in
+        let delay: TimeInterval = .random(in: 0.2 ... 2)
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
+
+            dispatch(UserAction.register(data))
+            dispatch(NavigationAction.home)
+        }
+    }
+}
+
 func transactionThunk(data: C2CTransfer) -> DXThunk<AppState> {
     .init(identifier: #function) { dispatch, state in
         let delay: TimeInterval = .random(in: 0.2 ... 2)
