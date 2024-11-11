@@ -68,7 +68,7 @@ Utilize **Thunks** for producing **side-effects**:
 ```swift
 func networkActionThunk(data: RequestData) -> DXThunk<AppState> {
     .init { dispatch, state in
-        NetworkService.fetchData(data: data) { result in
+        NetworkService.fetchData(requestData: data) { result in
             switch result {
             case let .success(responseData):
                 dispatch(NetworkAction.success(responseData))
