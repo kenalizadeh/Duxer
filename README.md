@@ -87,7 +87,7 @@ func buttonTouchUpInside() {
     self.store.dispatch(TransferAction.pendingTransferFormUpdate(self.transferForm))
 
     guard let requestData,
-          let requestData.isValid
+          requestData.isValid
     else { return }
 
     self.store.dispatch(networkActionThunk(data: requestData)
