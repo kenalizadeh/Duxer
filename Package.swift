@@ -1,5 +1,5 @@
+// swift-tools-version: 6.1
 let package = Package(
-
     name: "Duxer",
     products: [
         .library(
