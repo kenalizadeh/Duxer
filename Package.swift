@@ -17,7 +17,8 @@ let package = Package(
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
             name: "duxer",
-            path: "Duxer/Classes"
+            path: "Duxer/Classes",
+            exclude: ["Example", "Duxer.podspec", "_Pods.xcodeproj"]
         )
     ]
 )
