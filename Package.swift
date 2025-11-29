@@ -9,10 +9,8 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "Duxer"
-        ),
-        .testTarget(
-            name: "Duxer"
-        ),
+            name: "Duxer",
+            sources: "Duxer/Classes"
+        )
     ]
 )
