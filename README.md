@@ -121,12 +121,7 @@ class UserViewController: DXVC<UserState> {
 
 ## Installation
 
-Duxer is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod 'Duxer'
-```
+Duxer is available through [CocoaPods](https://cocoapods.org) and [Swift Package Manager](https://docs.swift.org/swiftpm/documentation/packagemanagerdocs/).
 
 ## Author
 
