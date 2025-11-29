@@ -1,4 +1,6 @@
-// swift-tools-version: 6.1
+// swift-tools-version: 6.0
+import PackageDescription
+
 let package = Package(
     name: "Duxer",
     products: [
